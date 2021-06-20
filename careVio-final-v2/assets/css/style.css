@@ -1,0 +1,156 @@
+.header-section{
+  background-color: #ffffff;
+  padding: 0 40px;
+  border-bottom: 1px solid #75616130;
+}
+
+.custom-navbar .navbar-brand img{width:43px; margin-top: -10px;}
+.custom-navbar .navbar-brand{padding: 24px 0;}
+
+.nav-font{
+  font-size: 16px;
+}
+
+.nav-item a.active{
+  border-bottom: 1px solid #1e1fd5;
+}
+.custom-navbar .navbar-nav li{
+  padding: 24px 0 0 80px;
+}
+.navbar .navbar-nav .nav-link{
+  font-family: Sora;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #45457f !important;
+  padding-bottom: 24px;
+}
+.ph_num:first-child{
+  font-family: Sora;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #8d8dc9;
+}
+.ph_num:last-child{
+  font-family: Sora;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  float: right;
+  letter-spacing: normal;
+  color: #1e1fd5;
+}
+.container{
+	height: 100%;
+}
+.twitter, .facebook, .linkedin{
+  object-fit: contain;
+}
+.fb_icon{
+  opacity: 0.08;
+  width: 40px;
+  height: 41px;
+  border-radius: 4px;
+  background-color: #4267b2;
+}
+.linkedin_icon{
+	width: 40px;
+  height: 41px;
+  opacity: 0.08;
+  border-radius: 4px;
+  background-color: #0e76a8;
+}
+.twitter_icon{
+	 opacity: 0.08;
+  border-radius: 4px;
+  width: 40px;
+  height: 41px;
+  background-color: #00acee;
+}
+.social_icons{
+	text-align: right;
+}
+.tele:hover{
+  text-decoration: none;
+}
+#footer{
+  background-color: #f6f6fd;
+  border-bottom: none !important;
+  height: 146px !important;
+}
+
+.hover-color a:hover{
+  color:#1e1fd5 !important;
+}
+
+.testimonials-margin{
+
+  margin-left: 33px;
+
+}
+.nav-options{
+  margin-left: 20%
+}
+.navbar .navbar-nav .dropdown-item{
+  padding: 12px 24px;
+} 
+.navbar .navbar-nav .dropdown-item:active{
+  background-color: #f8f9fa;
+} 
+.navbar .navbar-nav .dropdown-item:hover{
+  color: #1e1fd5;
+} 
+
+
+/* Media queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px){
+  .ph_num:last-child {
+    font-family: Sora;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    float: left;
+    letter-spacing: normal;
+    color: #1e1fd5;
+}
+.custom-navbar .navbar-nav li{
+  padding: 0px 0 0 0px;
+}
+.nav-options{
+  margin-left: 0%;
+}
+.testimonials-margin{
+  margin-left: 0px;
+}
+#footer{
+  background-color: #f6f6fd;
+    border-bottom: none !important;
+    height: 100% !important;
+}
+.social_icons{
+  text-align: center;
+}
+.mb-margin{
+  margin-top: 20px;
+}
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1076px){
+ .custom-navbar .navbar-nav li {
+    padding: 24px 0 0;
+}
+  
+}

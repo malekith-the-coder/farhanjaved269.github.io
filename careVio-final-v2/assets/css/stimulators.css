@@ -1,0 +1,25 @@
+.heading{
+    font-size: 48px;
+    color: #1f1f43;
+    font-weight: 600;
+    line-height: 1.17;
+}
+.paragraph{
+    color: #45457f;
+    font-size: 14px;
+    line-height: 1.43;
+}
+
+.heading2{
+    color: #1f1f43;
+    font-size: 20px;
+    line-height: 1.4;
+}
+.ul-list{
+    color: #45457f;
+    font-size: 16px;
+    padding: 17px;
+}
+.paragraph a{
+    color: blue;
+}

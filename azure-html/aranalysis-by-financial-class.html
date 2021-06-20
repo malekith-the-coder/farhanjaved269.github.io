@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Nephrolytics | Analysis by Financial Class</title>
+  <!-- base:css -->
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+    <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="vendors/jquery-asColorPicker/css/asColorPicker.min.css">
+    <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="vendors/tempusdominus-bootstrap-4/tempusdominus-bootstrap-4.min.css">
+    <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.1/css/all.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/layout/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_sidebar.html -->
+
+      <nav class="sidebar sidebar-info" id="sidebar">
+          <div class="sidebar-content-wrapper sidebar-offcanvas">
+              <ul class="nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="dashboard.html">
+                          <i class="ti-home menu-icon"></i>
+                          <span class="menu-title">Financial Dashboard</span>
+                      </a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link" data-toggle="collapse" href="#financial_analysis" aria-expanded="false"
+                         aria-controls="ui-apps">
+                          <i class="fas fa-chart-line menu-icon"></i>
+                          <span class="menu-title">Analytics</span>
+                          <i class="ti-angle-down menu-arrow"></i>
+                      </a>
+                      <div class="collapse" id="financial_analysis">
+                          <ul class="nav flex-column sub-menu">
+
+                              <li class="nav-item">
+
+                                  <a href="active-patient-balance.html" class="nav-link">
+
+
+                                      <span>Total Active Patient Balance</span>
+
+
+
+                                  </a>
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="esrd-patient-balance.html" class="nav-link">
+
+
+                                      <span>ESRD Patient Balance</span>
+
+
+
+                                  </a>
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="ckd-patient-balance.html" class="nav-link">
+
+
+                                      <span>CKD Patient Balance</span>
+
+
+
+                                  </a>
+
+
+                              </li>
+                              <li class="nav-item">
+
+                                  <a href="new-ckd-patient-balance.html" class="nav-link">
+
+
+                                      <span>New CKD Patient balance</span>
+
+
+
+                                  </a>
+
+
+                              </li>
+                              <li class="nav-item">
+
+                                  <a href="late-patient-balance.html" class="nav-link">
+
+
+                                      <span>Late Patient Balance</span>
+
+
+
+                                  </a>
+
+
+                              </li>
+                              <li class="nav-item">
+
+                                  <a href="overdue-patient-balance.html" class="nav-link">
+
+
+                                      <span>Overdue Patient Balance</span>
+
+
+
+                                  </a>
+
+
+                              </li>
+                              <li class="nav-item">
+
+                                  <a href="revenue.html" class="nav-link">
+
+
+                                      <span>Revenue</span>
+
+
+
+                                  </a>
+
+
+                              </li>
+                              <li class="nav-item">
+
+                                  <a href="analysis-report.html" class="nav-link">
+
+
+                                      <span>Analysis Report</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" data-toggle="collapse" href="#financial_reports" aria-expanded="false"
+                         aria-controls="ui-basic">
+                          <i class="fas fa-chart-bar menu-icon"></i>
+                          <span class="menu-title">Financial Reports</span>
+                          <i class="ti-angle-down menu-arrow"></i>
+                      </a>
+                      <div class="collapse" id="financial_reports">
+                          <ul class="nav flex-column sub-menu">
+
+                              <!--<li class="nav-item">-->
+
+                              <!--<a href="acknowledgement-report.html" class="nav-link">-->
+
+
+                              <!--<span>Acknowledgement Reciept</span>-->
+
+
+
+                              <!--</a>-->
+
+
+
+
+
+
+                              <!--</li>-->
+
+
+                              <!--<li class="nav-item">-->
+
+                              <!--<a href="advance-eligibility-report.html" class="nav-link">-->
+
+
+                              <!--<span>Advance Eligibility Reciept</span>-->
+
+
+
+                              <!--</a>-->
+
+
+
+
+
+
+                              <!--</li>-->
+
+
+                              <!--<li class="nav-item">-->
+
+                              <!--<a href="charge-detail-report.html" class="nav-link">-->
+
+
+                              <!--<span>Charge Detail Report</span>-->
+
+
+
+                              <!--</a>-->
+
+
+
+
+
+
+                              <!--</li>-->
+                              <!--<li class="nav-item">-->
+
+                              <!--<a href="daily-summary-report.html" class="nav-link">-->
+
+
+                              <!--<span>Daily Summary Report</span>-->
+
+
+
+                              <!--</a>-->
+
+
+
+
+
+
+                              <!--</li>-->
+
+
+
+
+
+                              <!--<li class="nav-item">-->
+
+                              <!--<a href="weekly-audit-report.html" class="nav-link">-->
+
+
+                              <!--<span>Weekly Audit Report</span>-->
+
+
+
+                              <!--</a>-->
+
+
+
+
+
+
+                              <!--</li>-->
+                              <li class="nav-item">
+
+                                  <a href="aging-summary.html" class="nav-link">
+
+
+                                      <span>Aging Summary</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="aranalysis-by-financial-class.html" class="nav-link">
+
+
+                                      <span>AR Analysis by fanancial Class</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="aranalysis-by-location.html" class="nav-link">
+
+
+                                      <span>AR Analysis by Location</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+                              <li class="nav-item">
+
+                                  <a href="aranalysis-by-provider.html" class="nav-link">
+
+
+                                      <span>AR Analysis by Provider</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="charges-collection-summary.html" class="nav-link">
+
+
+                                      <span>Charges & Collections Summary</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="checks-reconciliation-report.html" class="nav-link">
+
+
+                                      <span>Checks Reconciliation Report</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+                              <li class="nav-item">
+
+                                  <a href="deductables-report.html" class="nav-link">
+
+
+                                      <span>Deductibles Report</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="patients-payment-report.html" class="nav-link">
+
+
+                                      <span>Patients Payment Report</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="performance-report.html" class="nav-link">
+
+
+                                      <span>Performance Report</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+                              <li class="nav-item">
+
+                                  <a href="procedure-analysis.html" class="nav-link">
+
+
+                                      <span>Procedure Analysis</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="productivity-analysis.html" class="nav-link">
+
+
+                                      <span>Productivity Analysis</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="transaction-analysis.html" class="nav-link">
+
+
+                                      <span>Transaction Anaylis</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" data-toggle="collapse" href="#physician" aria-expanded="false"
+                         aria-controls="ui-advanced">
+                          <i class="fas fa-user-md menu-icon"></i>
+                          <span class="menu-title">Physician</span>
+                          <i class="ti-angle-down menu-arrow"></i>
+                      </a>
+                      <div class="collapse" id="physician">
+                          <ul class="nav flex-column sub-menu">
+                              <li class="nav-item">
+
+                                  <a href="physician1.html" class="nav-link">
+
+
+                                      <span>Physician 1</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="physician2.html" class="nav-link">
+
+
+                                      <span>Physician 2</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="physician3.html" class="nav-link">
+
+
+                                      <span>Physician 3</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" data-toggle="collapse" href="#location" aria-expanded="false"
+                         aria-controls="form-elements">
+                          <i class="fas fa-map-marker-alt menu-icon"></i>
+                          <span class="menu-title">Location</span>
+                          <i class="ti-angle-down menu-arrow"></i>
+                      </a>
+                      <div class="collapse" id="location">
+                          <ul class="nav flex-column sub-menu">
+                              <li class="nav-item">
+
+                                  <a href="location1.html" class="nav-link">
+
+
+                                      <span>Location 1</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="location2.html" class="nav-link">
+
+
+                                      <span>Location 2</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="location3.html" class="nav-link">
+
+
+                                      <span>Location 3</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="patients.html">
+                          <i class="fas fa-user-injured menu-icon"></i>
+                          <span class="menu-title">Patients</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="procedures.html">
+                          <i class="fas fa-recycle menu-icon"></i>
+                          <span class="menu-title">Procedure</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="payers.html">
+                          <i class="fas fa-dollar-sign menu-icon"></i>
+                          <span class="menu-title">Payers</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="user-maintenence.html">
+                          <i class="fas fa-users-cog menu-icon"></i>
+                          <span class="menu-title">User Maintenance</span>
+                      </a>
+                  </li>
+
+              </ul>
+          </div>
+      </nav>
+
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+
+        <nav class="navbar p-0 d-flex flex-row">
+            <div class="navbar-menu-wrapper d-flex align-items-center">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                    <span class="ti-align-left"></span>
+                </button>
+                <div class="navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                    <a class="navbar-brand brand-logo" href="dashboard.html" style="color:#fff;"><img src="images/logo.png" alt="logo"/></a>
+                    <a class="navbar-brand brand-logo-mini" href="dashboard.html" style="color:#fff;"><img src="images/logo.png" alt="logo"/></a>
+                </div>
+                <ul class="navbar-nav navbar-nav-right ml-auto">
+                    <li class="nav-item nav-search d-none d-sm-flex">
+                        <div class="nav-link d-flex justify-content-center align-items-center">
+                            <input type="text" class="form-control hidden" id="search-field" placeholder="Search...">
+                            <i class="ti-search mx-0" id="search-icon"></i>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center"
+                           id="messageDropdown" href="#" data-toggle="dropdown">
+                            <i class="ti-comment mx-0"></i>
+                            <span class="count"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                             aria-labelledby="messageDropdown">
+                            <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <img src="https://via.placeholder.com/36x36" alt="image" class="profile-pic">
+                                </div>
+                                <div class="preview-item-content flex-grow">
+                                    <h6 class="preview-subject ellipsis font-weight-normal">David Grey
+                                    </h6>
+                                    <p class="font-weight-light small-text text-muted mb-0">
+                                        The meeting is cancelled
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <img src="https://via.placeholder.com/36x36" alt="image" class="profile-pic">
+                                </div>
+                                <div class="preview-item-content flex-grow">
+                                    <h6 class="preview-subject ellipsis font-weight-normal">Tim Cook
+                                    </h6>
+                                    <p class="font-weight-light small-text text-muted mb-0">
+                                        New product launch
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <img src="https://via.placeholder.com/36x36" alt="image" class="profile-pic">
+                                </div>
+                                <div class="preview-item-content flex-grow">
+                                    <h6 class="preview-subject ellipsis font-weight-normal"> Johnson
+                                    </h6>
+                                    <p class="font-weight-light small-text text-muted mb-0">
+                                        Upcoming board meeting
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center"
+                           id="notificationDropdown" href="#" data-toggle="dropdown">
+                            <i class="ti-bell mx-0"></i>
+                            <span class="count"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                             aria-labelledby="notificationDropdown">
+                            <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <div class="preview-icon bg-gradient-success">
+                                        <i class="ti-info mx-0"></i>
+                                    </div>
+                                </div>
+                                <div class="preview-item-content">
+                                    <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                                    <p class="font-weight-light small-text mb-0 text-muted">
+                                        Just now
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <div class="preview-icon bg-gradient-warning">
+                                        <i class="ti-settings mx-0"></i>
+                                    </div>
+                                </div>
+                                <div class="preview-item-content">
+                                    <h6 class="preview-subject font-weight-normal">Settings</h6>
+                                    <p class="font-weight-light small-text mb-0 text-muted">
+                                        Private message
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <div class="preview-icon bg-gradient-info">
+                                        <i class="ti-user mx-0"></i>
+                                    </div>
+                                </div>
+                                <div class="preview-item-content">
+                                    <h6 class="preview-subject font-weight-normal">New user registration</h6>
+                                    <p class="font-weight-light small-text mb-0 text-muted">
+                                        2 days ago
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-profile dropdown">
+                        <a class="nav-link" href="#" data-toggle="dropdown" id="profileDropdown">
+                            <img src="https://via.placeholder.com/30x30" alt="profile"/>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown"
+                             aria-labelledby="profileDropdown">
+                            <a class="dropdown-item"  href="profile.html">
+                                <i class="ti-settings text-primary"></i>
+                                Profile
+                            </a>
+                            <a class="dropdown-item" href="login.html">
+                                <i class="ti-new-window text-primary"></i>
+                                Logout
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                        data-toggle="offcanvas">
+                    <span class="ti-menu"></span>
+                </button>
+            </div>
+        </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-xl-3 grid-margin">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h4>Active Patients</h4>
+                                    <h4 class="text-white mt-3">800</h4>
+                                    <!--<h6 class="text-muted">35.19% Since last month</h6>-->
+                                </div>
+                                <div class="icon-box icon-box-bg-image-warning">
+                                    <i class="fas fa-users gradient-card-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 grid-margin">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h4>New Patients</h4>
+                                    <h4 class="text-white mt-3">176</h4>
+                                    <!--<h6 class="text-muted">73.52% Since last month</h6>-->
+                                </div>
+                                <div class="icon-box icon-box-bg-image-info">
+                                    <i class="fas fa-users gradient-card-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 grid-margin">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h4>CKD Patients</h4>
+                                    <h4 class="text-white mt-3">400</h4>
+                                    <!--<h6 class="text-muted">49.39% Since last month</h6>-->
+                                </div>
+                                <div class="icon-box icon-box-bg-image-danger">
+                                    <i class="fas fa-users gradient-card-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 grid-margin">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h4>ESRD Patients</h4>
+                                    <h4 class="text-white mt-3">250</h4>
+                                    <!--<h6 class="text-muted">18.33% Since last month</h6>-->
+                                </div>
+                                <div class="icon-box icon-box-bg-image-success">
+                                    <i class="fas fa-users gradient-card-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Custom Filter</h4>
+                            <div class="row">
+                                <div class="input-group input-daterange">
+
+                                    <div class="col-md-6">
+                                        <p>Start Date</p>
+                                        <input type="text" class="form-control" value="2012-04-05">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>End Date</p>
+                                        <input type="text" class="form-control" value="2012-04-19">
+                                    </div>
+                                </div>
+
+                                <!--<div class="input-group-addon mx-4">to</div>-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Analysis Report by Functional Class</h4>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="table-responsive">
+                                <table id="order-listing" class="table">
+                                    <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Prev A/R</th>
+                                        <th>Charges <br>Charge %</th>
+                                        <th>Payments<br> Profile%</th>
+                                        <th>Refunds & Debits</th>
+                                        <th>Adjust</th>
+                                        <th>Trans-in</th>
+                                        <th>Trans-out</th>
+                                        <th>New A/R<br> #Days</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+
+                                        <td>
+
+
+                                            Other Insurance
+                                        </td>                 <td>
+
+
+                                        259496.40
+                                    </td>
+
+                                        <td>
+
+                                            316699.00<br>100%
+
+                                        </td>
+                                        <td >183092.24<br>44%</td>
+                                        <td >0.00</td>
+                                        <td >231444.15</td>
+                                        <td >-8637.21</td>
+                                        <td >0.00</td>
+                                        <td >289396.87</td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>
+
+
+                                            Blue Cross
+                                        </td>                 <td>
+
+
+                                        259496.40
+                                    </td>
+
+                                        <td>
+
+                                            316699.00<br>100%
+
+                                        </td>
+                                        <td >183092.24<br>44%</td>
+                                        <td >0.00</td>
+                                        <td >231444.15</td>
+                                        <td >-8637.21</td>
+                                        <td >0.00</td>
+                                        <td >289396.87</td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>
+
+
+                                            Medicare
+                                        </td>                 <td>
+
+
+                                        259496.40
+                                    </td>
+
+                                        <td>
+
+                                            316699.00<br>100%
+
+                                        </td>
+                                        <td >183092.24<br>44%</td>
+                                        <td >0.00</td>
+                                        <td >231444.15</td>
+                                        <td >-8637.21</td>
+                                        <td >0.00</td>
+                                        <td >289396.87</td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>
+
+
+                                            Medicaid of ID
+                                        </td>                 <td>
+
+
+                                        259496.40
+                                    </td>
+
+                                        <td>
+
+                                            316699.00<br>100%
+
+                                        </td>
+                                        <td >183092.24<br>44%</td>
+                                        <td >0.00</td>
+                                        <td >231444.15</td>
+                                        <td >-8637.21</td>
+                                        <td >0.00</td>
+                                        <td >289396.87</td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>
+
+
+                                            PacificSource Medicare
+                                        </td>                 <td>
+
+
+                                        259496.40
+                                    </td>
+
+                                        <td>
+
+                                            316699.00<br>100%
+
+                                        </td>
+                                        <td >183092.24<br>44%</td>
+                                        <td >0.00</td>
+                                        <td >231444.15</td>
+                                        <td >-8637.21</td>
+                                        <td >0.00</td>
+                                        <td >289396.87</td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>
+
+
+                                            Aetna Health Plan
+                                        </td>                 <td>
+
+
+                                        259496.40
+                                    </td>
+
+                                        <td>
+
+                                            316699.00<br>100%
+
+                                        </td>
+                                        <td >183092.24<br>44%</td>
+                                        <td >0.00</td>
+                                        <td >231444.15</td>
+                                        <td >-8637.21</td>
+                                        <td >0.00</td>
+                                        <td >289396.87</td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>
+
+
+                                            Cigna
+                                        </td>                 <td>
+
+
+                                        259496.40
+                                    </td>
+
+                                        <td>
+
+                                            316699.00<br>100%
+
+                                        </td>
+                                        <td >183092.24<br>44%</td>
+                                        <td >0.00</td>
+                                        <td >231444.15</td>
+                                        <td >-8637.21</td>
+                                        <td >0.00</td>
+                                        <td >289396.87</td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>
+
+
+                                            BS of ID Regence
+                                        </td>                 <td>
+
+
+                                        259496.40
+                                    </td>
+
+                                        <td>
+
+                                            316699.00<br>100%
+
+                                        </td>
+                                        <td >183092.24<br>44%</td>
+                                        <td >0.00</td>
+                                        <td >231444.15</td>
+                                        <td >-8637.21</td>
+                                        <td >0.00</td>
+                                        <td >289396.87</td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>
+
+
+                                            United Health Care
+                                        </td>                 <td>
+
+
+                                        259496.40
+                                    </td>
+
+                                        <td>
+
+                                            316699.00<br>100%
+
+                                        </td>
+                                        <td >183092.24<br>44%</td>
+                                        <td >0.00</td>
+                                        <td >231444.15</td>
+                                        <td >-8637.21</td>
+                                        <td >0.00</td>
+                                        <td >289396.87</td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>
+
+
+                                            Health Management Administrators
+                                        </td>                 <td>
+
+
+                                        259496.40
+                                    </td>
+
+                                        <td>
+
+                                            316699.00<br>100%
+
+                                        </td>
+                                        <td >183092.24<br>44%</td>
+                                        <td >0.00</td>
+                                        <td >231444.15</td>
+                                        <td >-8637.21</td>
+                                        <td >0.00</td>
+                                        <td >289396.87</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+
+
+                                            Grand Total
+                                        </td>
+
+                                        <td>
+
+
+                                            259496.40
+                                        </td>
+
+                                        <td>
+
+                                            316699.00<br>100%
+
+                                        </td>
+                                        <td >183092.24<br>44%</td>
+                                        <td >0.00</td>
+                                        <td >231444.15</td>
+                                        <td >-8637.21</td>
+                                        <td >0.00</td>
+                                        <td >289396.87</td>
+                                    </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+          <footer class="footer">
+              <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                    <span class="text-center text-sm-left d-block d-sm-inline-block">Copyright © 2020<a
+                            href="#" target="_blank" class="ml-1">Transcure</a>. All rights reserved.</span>
+                  <!--<span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Designed by: Transcure<i-->
+                  <!--class="ti-heart text-danger ml-1"></i></span>-->
+              </div>
+          </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- base:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- plugin js for this page -->
+  <script src="vendors/jquery-asColor/jquery-asColor.min.js"></script>
+  <script src="vendors/jquery-asGradient/jquery-asGradient.min.js"></script>
+  <script src="vendors/jquery-asColorPicker/jquery-asColorPicker.min.js"></script>
+  <!--<script src="vendors/x-editable/bootstrap-editable.min.js"></script>-->
+  <script src="vendors/moment/moment.min.js"></script>
+  <script src="vendors/tempusdominus-bootstrap-4/tempusdominus-bootstrap-4.js"></script>
+  <script src="vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="js/formpickers.js"></script>
+  <script src="vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <!-- End plugin js for this page -->
+  <!-- Custom js for this page-->
+  <script src="js/data-table.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+.heading{
+    color: #1f1f43;
+    font-size: 48px;
+    font-weight: 600;
+}
+.mini-head{
+    color: #1f1f43;
+    font-family: Sora;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+}
+.ul-list{
+    color: #45457f;
+    font-family: Sora;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  padding-left: 18px;
+}
+.btn-primary{
+    background-color: #1e1fd5 !important;
+    height: 64px !important;
+  border-radius: 4px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: normal !important;
+  letter-spacing: 1px !important;
+  text-align: center !important;
+}
+.caret.caret-up {
+  border-top-width: 0;
+  border-bottom: 4px solid #fff;
+}

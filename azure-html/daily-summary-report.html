@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Nephrolytics | Daily Summary Report</title>
+  <!-- base:css -->
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.1/css/all.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/layout/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_sidebar.html -->
+
+      <nav class="sidebar sidebar-info" id="sidebar">
+          <div class="sidebar-content-wrapper sidebar-offcanvas">
+              <ul class="nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="dashboard.html">
+                          <i class="ti-home menu-icon"></i>
+                          <span class="menu-title">Financial Dashboard</span>
+                      </a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link" data-toggle="collapse" href="#financial_analysis" aria-expanded="false"
+                         aria-controls="ui-apps">
+                          <i class="fas fa-chart-line menu-icon"></i>
+                          <span class="menu-title">Analytics</span>
+                          <i class="ti-angle-down menu-arrow"></i>
+                      </a>
+                      <div class="collapse" id="financial_analysis">
+                          <ul class="nav flex-column sub-menu">
+
+                              <li class="nav-item">
+
+                                  <a href="active-patient-balance.html" class="nav-link">
+
+
+                                      <span>Total Active Patient Balance</span>
+
+
+
+                                  </a>
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="esrd-patient-balance.html" class="nav-link">
+
+
+                                      <span>ESRD Patient Balance</span>
+
+
+
+                                  </a>
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="ckd-patient-balance.html" class="nav-link">
+
+
+                                      <span>CKD Patient Balance</span>
+
+
+
+                                  </a>
+
+
+                              </li>
+                              <li class="nav-item">
+
+                                  <a href="new-ckd-patient-balance.html" class="nav-link">
+
+
+                                      <span>New CKD Patient balance</span>
+
+
+
+                                  </a>
+
+
+                              </li>
+                              <li class="nav-item">
+
+                                  <a href="late-patient-balance.html" class="nav-link">
+
+
+                                      <span>Late Patient Balance</span>
+
+
+
+                                  </a>
+
+
+                              </li>
+                              <li class="nav-item">
+
+                                  <a href="overdue-patient-balance.html" class="nav-link">
+
+
+                                      <span>Overdue Patient Balance</span>
+
+
+
+                                  </a>
+
+
+                              </li>
+                              <li class="nav-item">
+
+                                  <a href="revenue.html" class="nav-link">
+
+
+                                      <span>Revenue</span>
+
+
+
+                                  </a>
+
+
+                              </li>
+                              <li class="nav-item">
+
+                                  <a href="analysis-report.html" class="nav-link">
+
+
+                                      <span>Analysis Report</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" data-toggle="collapse" href="#financial_reports" aria-expanded="false"
+                         aria-controls="ui-basic">
+                          <i class="fas fa-chart-bar menu-icon"></i>
+                          <span class="menu-title">Financial Reports</span>
+                          <i class="ti-angle-down menu-arrow"></i>
+                      </a>
+                      <div class="collapse" id="financial_reports">
+                          <ul class="nav flex-column sub-menu">
+
+                              <!--<li class="nav-item">-->
+
+                              <!--<a href="acknowledgement-report.html" class="nav-link">-->
+
+
+                              <!--<span>Acknowledgement Reciept</span>-->
+
+
+
+                              <!--</a>-->
+
+
+
+
+
+
+                              <!--</li>-->
+
+
+                              <!--<li class="nav-item">-->
+
+                              <!--<a href="advance-eligibility-report.html" class="nav-link">-->
+
+
+                              <!--<span>Advance Eligibility Reciept</span>-->
+
+
+
+                              <!--</a>-->
+
+
+
+
+
+
+                              <!--</li>-->
+
+
+                              <!--<li class="nav-item">-->
+
+                              <!--<a href="charge-detail-report.html" class="nav-link">-->
+
+
+                              <!--<span>Charge Detail Report</span>-->
+
+
+
+                              <!--</a>-->
+
+
+
+
+
+
+                              <!--</li>-->
+                              <!--<li class="nav-item">-->
+
+                              <!--<a href="daily-summary-report.html" class="nav-link">-->
+
+
+                              <!--<span>Daily Summary Report</span>-->
+
+
+
+                              <!--</a>-->
+
+
+
+
+
+
+                              <!--</li>-->
+
+
+
+
+
+                              <!--<li class="nav-item">-->
+
+                              <!--<a href="weekly-audit-report.html" class="nav-link">-->
+
+
+                              <!--<span>Weekly Audit Report</span>-->
+
+
+
+                              <!--</a>-->
+
+
+
+
+
+
+                              <!--</li>-->
+                              <li class="nav-item">
+
+                                  <a href="aging-summary.html" class="nav-link">
+
+
+                                      <span>Aging Summary</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="aranalysis-by-financial-class.html" class="nav-link">
+
+
+                                      <span>AR Analysis by fanancial Class</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="aranalysis-by-location.html" class="nav-link">
+
+
+                                      <span>AR Analysis by Location</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+                              <li class="nav-item">
+
+                                  <a href="aranalysis-by-provider.html" class="nav-link">
+
+
+                                      <span>AR Analysis by Provider</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="charges-collection-summary.html" class="nav-link">
+
+
+                                      <span>Charges & Collections Summary</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="checks-reconciliation-report.html" class="nav-link">
+
+
+                                      <span>Checks Reconciliation Report</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+                              <li class="nav-item">
+
+                                  <a href="deductables-report.html" class="nav-link">
+
+
+                                      <span>Deductibles Report</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="patients-payment-report.html" class="nav-link">
+
+
+                                      <span>Patients Payment Report</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="performance-report.html" class="nav-link">
+
+
+                                      <span>Performance Report</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+                              <li class="nav-item">
+
+                                  <a href="procedure-analysis.html" class="nav-link">
+
+
+                                      <span>Procedure Analysis</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="productivity-analysis.html" class="nav-link">
+
+
+                                      <span>Productivity Analysis</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="transaction-analysis.html" class="nav-link">
+
+
+                                      <span>Transaction Anaylis</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" data-toggle="collapse" href="#physician" aria-expanded="false"
+                         aria-controls="ui-advanced">
+                          <i class="fas fa-user-md menu-icon"></i>
+                          <span class="menu-title">Physician</span>
+                          <i class="ti-angle-down menu-arrow"></i>
+                      </a>
+                      <div class="collapse" id="physician">
+                          <ul class="nav flex-column sub-menu">
+                              <li class="nav-item">
+
+                                  <a href="physician1.html" class="nav-link">
+
+
+                                      <span>Physician 1</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="physician2.html" class="nav-link">
+
+
+                                      <span>Physician 2</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="physician3.html" class="nav-link">
+
+
+                                      <span>Physician 3</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" data-toggle="collapse" href="#location" aria-expanded="false"
+                         aria-controls="form-elements">
+                          <i class="fas fa-map-marker-alt menu-icon"></i>
+                          <span class="menu-title">Location</span>
+                          <i class="ti-angle-down menu-arrow"></i>
+                      </a>
+                      <div class="collapse" id="location">
+                          <ul class="nav flex-column sub-menu">
+                              <li class="nav-item">
+
+                                  <a href="location1.html" class="nav-link">
+
+
+                                      <span>Location 1</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="location2.html" class="nav-link">
+
+
+                                      <span>Location 2</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+
+
+                              <li class="nav-item">
+
+                                  <a href="location3.html" class="nav-link">
+
+
+                                      <span>Location 3</span>
+
+
+
+                                  </a>
+
+
+
+
+
+
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="patients.html">
+                          <i class="fas fa-user-injured menu-icon"></i>
+                          <span class="menu-title">Patients</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="procedures.html">
+                          <i class="fas fa-recycle menu-icon"></i>
+                          <span class="menu-title">Procedure</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="payers.html">
+                          <i class="fas fa-dollar-sign menu-icon"></i>
+                          <span class="menu-title">Payers</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="user-maintenence.html">
+                          <i class="fas fa-users-cog menu-icon"></i>
+                          <span class="menu-title">User Maintenance</span>
+                      </a>
+                  </li>
+
+              </ul>
+          </div>
+      </nav>
+
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+
+        <nav class="navbar p-0 d-flex flex-row">
+            <div class="navbar-menu-wrapper d-flex align-items-center">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                    <span class="ti-align-left"></span>
+                </button>
+                <div class="navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                    <a class="navbar-brand brand-logo" href="dashboard.html" style="color:#fff;"><img src="images/logo.png" alt="logo"/></a>
+                    <a class="navbar-brand brand-logo-mini" href="dashboard.html" style="color:#fff;"><img src="images/logo.png" alt="logo"/></a>
+                </div>
+                <ul class="navbar-nav navbar-nav-right ml-auto">
+                    <li class="nav-item nav-search d-none d-sm-flex">
+                        <div class="nav-link d-flex justify-content-center align-items-center">
+                            <input type="text" class="form-control hidden" id="search-field" placeholder="Search...">
+                            <i class="ti-search mx-0" id="search-icon"></i>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center"
+                           id="messageDropdown" href="#" data-toggle="dropdown">
+                            <i class="ti-comment mx-0"></i>
+                            <span class="count"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                             aria-labelledby="messageDropdown">
+                            <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <img src="https://via.placeholder.com/36x36" alt="image" class="profile-pic">
+                                </div>
+                                <div class="preview-item-content flex-grow">
+                                    <h6 class="preview-subject ellipsis font-weight-normal">David Grey
+                                    </h6>
+                                    <p class="font-weight-light small-text text-muted mb-0">
+                                        The meeting is cancelled
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <img src="https://via.placeholder.com/36x36" alt="image" class="profile-pic">
+                                </div>
+                                <div class="preview-item-content flex-grow">
+                                    <h6 class="preview-subject ellipsis font-weight-normal">Tim Cook
+                                    </h6>
+                                    <p class="font-weight-light small-text text-muted mb-0">
+                                        New product launch
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <img src="https://via.placeholder.com/36x36" alt="image" class="profile-pic">
+                                </div>
+                                <div class="preview-item-content flex-grow">
+                                    <h6 class="preview-subject ellipsis font-weight-normal"> Johnson
+                                    </h6>
+                                    <p class="font-weight-light small-text text-muted mb-0">
+                                        Upcoming board meeting
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center"
+                           id="notificationDropdown" href="#" data-toggle="dropdown">
+                            <i class="ti-bell mx-0"></i>
+                            <span class="count"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                             aria-labelledby="notificationDropdown">
+                            <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <div class="preview-icon bg-gradient-success">
+                                        <i class="ti-info mx-0"></i>
+                                    </div>
+                                </div>
+                                <div class="preview-item-content">
+                                    <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                                    <p class="font-weight-light small-text mb-0 text-muted">
+                                        Just now
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <div class="preview-icon bg-gradient-warning">
+                                        <i class="ti-settings mx-0"></i>
+                                    </div>
+                                </div>
+                                <div class="preview-item-content">
+                                    <h6 class="preview-subject font-weight-normal">Settings</h6>
+                                    <p class="font-weight-light small-text mb-0 text-muted">
+                                        Private message
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <div class="preview-icon bg-gradient-info">
+                                        <i class="ti-user mx-0"></i>
+                                    </div>
+                                </div>
+                                <div class="preview-item-content">
+                                    <h6 class="preview-subject font-weight-normal">New user registration</h6>
+                                    <p class="font-weight-light small-text mb-0 text-muted">
+                                        2 days ago
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-profile dropdown">
+                        <a class="nav-link" href="#" data-toggle="dropdown" id="profileDropdown">
+                            <img src="https://via.placeholder.com/30x30" alt="profile"/>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown"
+                             aria-labelledby="profileDropdown">
+                            <a class="dropdown-item"  href="profile.html">
+                                <i class="ti-settings text-primary"></i>
+                                Profile
+                            </a>
+                            <a class="dropdown-item" href="login.html">
+                                <i class="ti-new-window text-primary"></i>
+                                Logout
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                        data-toggle="offcanvas">
+                    <span class="ti-menu"></span>
+                </button>
+            </div>
+        </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Financial Report</h4>
+              <div class="row">
+                <div class="col-12">
+                  <div class="table-responsive">
+                    <table id="order-listing" class="table">
+                      <thead>
+                      <tr>
+                          <th>Month</th>
+                          <th>No Of Claims</th>
+                          <th>Total Charges Amount</th>
+                          <th>Actual Collection</th>
+                          <th>Projected Collection</th>
+                          <th>Varience</th>
+                          <th>Collection %age</th>
+                          <th>Contractual Adj.</th>
+                      </tr>
+                      </thead>
+                        <tbody>
+      <tr>
+
+                            <td>
+
+
+                                    Jun-2019
+                            </td>
+
+                           <td>
+
+                                1019
+
+                            </td>
+                            <td >890927</td>
+                            <td >207924.94</td>
+                            <td >400917.15</td>
+                            <td >192992.21</td>
+                            <td >23.338044531146</td>
+                            <td >-285060.87</td>
+                        </tr>
+                        <tr>
+
+                            <td>
+
+
+                                    Jul-2019
+                            </td>
+
+                            <td>
+
+                                1163
+
+                            </td>
+                            <td >1128489</td>
+                            <td >234853.09</td>
+                            <td >507820.05</td>
+                            <td >272966.96</td>
+                            <td >20.811287482643</td>
+                            <td >-323294.27</td>
+                        </tr>
+                        <tr>
+
+                            <td>
+
+
+                                    Aug-2019
+                            </td>
+                            <td>
+
+                                1151
+
+                            </td>
+                            <td >1107912</td>
+                            <td >227027.06</td>
+                            <td >498560.4</td>
+                            <td >271533.34</td>
+                            <td >20.491434337745</td>
+                            <td >-328352.09</td>
+                        </tr>
+                        <tr>
+
+                            <td>
+
+
+                                    Sep-2019
+
+                            </td>
+                            <td>
+
+                                1187
+
+                            </td>
+                            <td >945344</td>
+                            <td >225568.12</td>
+                            <td >425404.8</td>
+                            <td >199836.68</td>
+                            <td >23.860956434906</td>
+                            <td >-302486.65</td>
+                        </tr>
+                        <tr>
+
+                            <td>
+
+
+                                    Oct-2019
+
+                            </td>
+
+                            <td>
+                                1325
+
+                            </td>
+                            <td >1239967</td>
+                            <td >247802.65</td>
+                            <td >557985.15</td>
+                            <td >310182.5</td>
+                            <td >19.984616526085</td>
+                            <td >-377196.38000001</td>
+                        </tr>
+                        <tr>
+
+                            <td>
+
+
+                                    Nov-2019
+
+                            </td>
+                            <td>
+                                1095
+
+                            </td>
+                            <td >964191</td>
+                            <td >219758.31</td>
+                            <td >433885.95</td>
+                            <td >214127.64</td>
+                            <td >22.791989346509</td>
+                            <td >-318425.17</td>
+                        </tr>
+                        <tr>
+
+                            <td>
+
+
+                                    Dec-2019
+
+                            </td>
+                            <td>
+                                1412
+
+                            </td>
+                            <td >1894274</td>
+                            <td >267934.29</td>
+                            <td >852423.3</td>
+                            <td >584489.01</td>
+                            <td >14.144431586983</td>
+                            <td >-434537.73000001</td>
+                        </tr>
+                        <tr>
+
+                            <td>
+
+
+                                    Jan-2020
+
+                            </td>
+                            <td>
+                                1463
+
+                            </td>
+                            <td >3209117</td>
+                            <td >428782.58999999</td>
+                            <td >1444102.65</td>
+                            <td >1015320.06</td>
+                            <td >13.361388506558</td>
+                            <td >-605824.21000001</td>
+                        </tr>
+                        <tr>
+
+                            <td>
+
+
+                                    Feb-2020
+
+                            </td>
+                            <td>
+                                1428
+
+                            </td>
+                            <td >957873</td>
+                            <td >228073.57</td>
+                            <td >431042.85</td>
+                            <td >202969.28</td>
+                            <td >23.810418500156</td>
+                            <td >-379453.22</td>
+                        </tr>
+                        <tr>
+
+                            <td>
+
+
+                                    Mar-2020
+
+                            </td>
+                            <td>
+                                1486
+
+                            </td>
+                            <td >845551</td>
+                            <td >206186.55</td>
+                            <td >380497.95</td>
+                            <td >174311.4</td>
+                            <td >24.384874478299</td>
+                            <td >-380169.64</td>
+                        </tr>
+      <tr>
+
+          <td>
+
+
+              Apr-2020
+
+          </td>
+          <td>
+              1551
+
+          </td>
+          <td>855995</td>
+          <td>219421.28</td>
+          <td>385197.75</td>
+          <td>165776.47</td>
+          <td>25.633476831056</td>
+          <td>-393981.05</td>
+      </tr>
+      <tr>
+
+          <td>
+
+
+              May-2020
+
+          </td>
+          <td>
+              1574
+
+          </td>
+          <td>818353</td>
+          <td>199706.47</td>
+          <td>368258.85</td>
+          <td>168552.38</td>
+          <td>24.403462808837</td>
+          <td>-398213.84</td>
+      </tr>
+      <tr>
+
+          <td>
+
+
+              Jun-2020
+
+          </td>
+          <td>
+              1685
+
+          </td>
+          <td>771455</td>
+          <td>198898.94</td>
+          <td>347154.75</td>
+          <td>148255.81</td>
+          <td>25.782312642993</td>
+          <td>-383182.21</td>
+      </tr>
+      <tr>
+
+          <td>
+
+
+              Total
+
+          </td>
+          <td>
+              17539
+          </td>
+          <td>
+              15629448                </td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+                        </tbody>
+
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+          <footer class="footer">
+              <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                    <span class="text-center text-sm-left d-block d-sm-inline-block">Copyright © 2020<a
+                            href="#" target="_blank" class="ml-1">Transcure</a>. All rights reserved.</span>
+                  <!--<span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Designed by: Transcure<i-->
+                  <!--class="ti-heart text-danger ml-1"></i></span>-->
+              </div>
+          </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- base:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- plugin js for this page -->
+  <script src="vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <!-- End plugin js for this page -->
+  <!-- Custom js for this page-->
+  <script src="js/data-table.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>

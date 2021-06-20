@@ -1,0 +1,106 @@
+.primary-care{
+    font-size: 48px;
+    color: #1f1f43;
+    font-weight: 600;
+}
+
+.bottom-border{
+    border-bottom: 1px solid #e9e9f9;
+    padding-bottom: 60px;
+}
+
+.speciality{
+    font-size: 36px;
+    color: #1f1f43;
+    font-weight: 500;
+}
+
+.advanced{
+    font-size: 14px;
+    color: #45457f;
+}
+
+.blue-color{
+    color: #1e1fd5;
+    font-size: 14px;
+}
+
+.nutritonal{
+    color: #1f1f43;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.management{
+    font-size: 14px;
+    color: #45457f;
+}
+
+.div-text{
+    font-size: 20px;
+    color: #1f1f43;
+    font-weight: 500;
+    line-height: 1.4;
+
+}
+
+.div-team{
+    height: 256px;
+    background: #EDEDFC;
+    border-radius: 8px;
+}
+.div-drop{
+    height: 256px;
+    background: #FDEFEE;
+    border-radius: 8px;
+}
+.div-microscope{
+    height: 256px;
+    background: #F7EDF8;
+    border-radius: 8px;
+}
+.div-capsule{
+    height: 256px;
+    background: #EAFAF1;
+    border-radius: 8px;
+}
+
+.div-leaf{
+    height: 256px;
+    background: #EAFAF1;
+    border-radius: 8px;
+}
+.div-test-tube{
+    height: 256px;
+    background: #F7EDF8;
+    border-radius: 8px;
+}
+.div-bowel{
+    height: 256px;
+    background: #FDEFEE;
+    border-radius: 8px;
+}
+.div-osteoporisis{
+    height: 256px;
+    background: #EDEDFC;
+    border-radius: 8px;
+}
+.div-psychotherapy{
+    height: 256px;
+    background: #FFF6EB;
+    border-radius: 8px;
+}
+.img-center{
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 35%;
+}
+.products-img img{
+    width:100%;
+    height: 198px;
+}
+@media only screen and (max-width: 767px){
+
+
+}

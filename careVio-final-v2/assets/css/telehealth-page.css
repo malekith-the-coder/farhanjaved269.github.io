@@ -1,0 +1,145 @@
+.h1-left-dark{
+  font-family: Sora;
+  font-size: 48px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  color: #1f1f43;
+}
+.h2-left-dark{
+  font-family: Sora;
+  font-size: 36px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  color: #1f1f43;
+}
+.h4-left-dark{
+  font-family: Sora;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  color: #1f1f43;
+}
+.subtitle{
+  font-family: Sora;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #45457f;
+}
+.appointment{
+  border-radius: 4px;
+  background-color: #1e1fd5;
+  padding: 23px 32px;
+}
+.appointment a{
+  font-family: Sora;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.register{
+  padding: 23px 32px;
+  width: 299px;
+  border-radius: 4px;
+  border: 1px solid #1e1fd5;
+  background-color: #ffffff;
+}
+.register a{
+  font-family: Sora;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #1e1fd5;
+}
+.hint{
+  font-family: Sora;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #8d8dc9;
+}
+.photo {
+  width: 100%;
+  /*width: 256px;
+  height: 252px;*/
+}
+.role{
+  font-family: Sora;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #8d8dc9;
+}
+.visit_link{
+  padding: 20px 30px;
+  width: 162px;
+  /*height: 64px;*/
+  border-radius: 4px;
+  border: 1px solid #1e1fd5;
+  background-color: #ffffff;
+}
+.visit_link{
+  text-transform: uppercase;
+  font-family: Sora;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #1e1fd5;
+}
+.main_content .navbar-nav{
+  list-style-type: disc;
+  margin-left: 3%;
+}
+.main_content .navbar-nav .nav-item{
+  font-family: Sora;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #1e1fd5;
+}
+.vid_img{
+  width: 100%;
+  /*width: 1120px;
+  height: 630px;
+  opacity: 0.64;*/
+}
+@media only screen and (max-width: 767px){
+  .appointment{padding: 23px !important;}
+ .register{width: 100%;padding: 23px !important;}
+
+}

@@ -1,0 +1,36 @@
+.title{
+	font-family: Sora;
+  font-size: 48px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  color:#1f1f43;
+}
+
+p{
+	font-family: Sora;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #45457f;
+}
+
+.ul-list li a{
+  color: #1e1fd5 !important;
+}
+
+ul li{
+  font-family: Sora;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #1e1fd5 !important;
+}

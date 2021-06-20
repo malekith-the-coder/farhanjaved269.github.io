@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Nephrolytics | Procedures</title>
+    <!-- base:css -->
+    <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.1/css/all.min.css">
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/layout/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="images/favicon.png"/>
+    <style>
+        .raphael-group-8-background rect, .raphael-group-83-background rect, .raphael-group-thkhLZUh text{ fill: rgba(9, 14, 58, 0.8) !important; !important;}
+        .raphael-group-17-caption text, .raphael-group-92-caption text,
+        .raphael-group-54-dataset-top-label text, .raphael-group-90-datalabel text,
+        .raphael-group-129-dataset-top-label text, .raphael-group-15-datalabel text{fill:#fff !important;}
+        .text{font-size: 0 !important;}
+    </style>
+</head>
+<body>
+<div class="container-scroller">
+    <!-- partial:partials/_sidebar.html -->
+    <nav class="sidebar sidebar-info" id="sidebar">
+        <div class="sidebar-content-wrapper sidebar-offcanvas">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">
+                        <i class="ti-home menu-icon"></i>
+                        <span class="menu-title">Financial Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#financial_analysis" aria-expanded="false"
+                       aria-controls="ui-apps">
+                        <i class="fas fa-chart-line menu-icon"></i>
+                        <span class="menu-title">Analytics</span>
+                        <i class="ti-angle-down menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="financial_analysis">
+                        <ul class="nav flex-column sub-menu">
+
+                            <li class="nav-item">
+
+                                <a href="active-patient-balance.html" class="nav-link">
+
+
+                                    <span>Total Active Patient Balance</span>
+
+
+
+                                </a>
+
+
+                            </li>
+
+
+                            <li class="nav-item">
+
+                                <a href="esrd-patient-balance.html" class="nav-link">
+
+
+                                    <span>ESRD Patient Balance</span>
+
+
+
+                                </a>
+
+
+                            </li>
+
+
+                            <li class="nav-item">
+
+                                <a href="ckd-patient-balance.html" class="nav-link">
+
+
+                                    <span>CKD Patient Balance</span>
+
+
+
+                                </a>
+
+
+                            </li>
+                            <li class="nav-item">
+
+                                <a href="new-ckd-patient-balance.html" class="nav-link">
+
+
+                                    <span>New CKD Patient balance</span>
+
+
+
+                                </a>
+
+
+                            </li>
+                            <li class="nav-item">
+
+                                <a href="late-patient-balance.html" class="nav-link">
+
+
+                                    <span>Late Patient Balance</span>
+
+
+
+                                </a>
+
+
+                            </li>
+                            <li class="nav-item">
+
+                                <a href="overdue-patient-balance.html" class="nav-link">
+
+
+                                    <span>Overdue Patient Balance</span>
+
+
+
+                                </a>
+
+
+                            </li>
+                            <li class="nav-item">
+
+                                <a href="revenue.html" class="nav-link">
+
+
+                                    <span>Revenue</span>
+
+
+
+                                </a>
+
+
+                            </li>
+                            <li class="nav-item">
+
+                                <a href="analysis-report.html" class="nav-link">
+
+
+                                    <span>Analysis Report</span>
+
+
+
+                                </a>
+
+
+
+
+
+
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#financial_reports" aria-expanded="false"
+                       aria-controls="ui-basic">
+                        <i class="fas fa-chart-bar menu-icon"></i>
+                        <span class="menu-title">Financial Reports</span>
+                        <i class="ti-angle-down menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="financial_reports">
+                        <ul class="nav flex-column sub-menu">
+
+                            <!--<li class="nav-item">-->
+
+                            <!--<a href="acknowledgement-report.html" class="nav-link">-->
+
+
+                            <!--<span>Acknowledgement Reciept</span>-->
+
+
+
+                            <!--</a>-->
+
+
+
+
+
+
+                            <!--</li>-->
+
+
+                            <!--<li class="nav-item">-->
+
+                            <!--<a href="advance-eligibility-report.html" class="nav-link">-->
+
+
+                            <!--<span>Advance Eligibility Reciept</span>-->
+
+
+
+                            <!--</a>-->
+
+
+
+
+
+
+                            <!--</li>-->
+
+
+                            <!--<li class="nav-item">-->
+
+                            <!--<a href="charge-detail-report.html" class="nav-link">-->
+
+
+                            <!--<span>Charge Detail Report</span>-->
+
+
+
+                            <!--</a>-->
+
+
+
+
+
+
+                            <!--</li>-->
+                            <!--<li class="nav-item">-->
+
+                            <!--<a href="daily-summary-report.html" class="nav-link">-->
+
+
+                            <!--<span>Daily Summary Report</span>-->
+
+
+
+                            <!--</a>-->
+
+
+
+
+
+
+                            <!--</li>-->
+
+
+
+
+
+                            <!--<li class="nav-item">-->
+
+                            <!--<a href="weekly-audit-report.html" class="nav-link">-->
+
+
+                            <!--<span>Weekly Audit Report</span>-->
+
+
+
+                            <!--</a>-->
+
+
+
+
+
+
+                            <!--</li>-->
+                            <li class="nav-item">
+
+                                <a href="aging-summary.html" class="nav-link">
+
+
+                                    <span>Aging Summary</span>
+
+
+
+                                </a>
+
+
+
+
+
+
+                            </li>
+
+
+                            <li class="nav-item">
+
+                                <a href="aranalysis-by-financial-class.html" class="nav-link">
+
+
+                                    <span>AR Analysis by fanancial Class</span>
+
+
+
+                                </a>
+
+
+
+
+
+
+                            </li>
+
+
+                            <li class="nav-item">
+
+                                <a href="aranalysis-by-location.html" class="nav-link">
+
+
+                                    <span>AR Analysis by Location</span>
+
+
+
+                                </a>
+
+
+
+
+
+
+                            </li>
+                            <li class="nav-item">
+
+                                <a href="aranalysis-by-provider.html" class="nav-link">
+
+
+                                    <span>AR Analysis by Provider</span>
+
+
+
+                                </a>
+
+
+
+
+
+
+                            </li>
+
+
+                            <li class="nav-item">
+
+                                <a href="charges-collection-summary.html" class="nav-link">
+
+
+                                    <span>Charges & Collections Summary</span>
+
+
+
+                                </a>
+
+
+
+
+
+
+                            </li>
+
+
+                            <li class="nav-item">
+
+                                <a href="checks-reconciliation-report.html" class="nav-link">
+
+
+                                    <span>Checks Reconciliation Report</span>
+
+
+
+                                </a>
+
+
+
+
+
+
+                            </li>
+                            <li class="nav-item">
+
+                                <a href="deductables-report.html" class="nav-link">
+
+
+                                    <span>Deductibles Report</span>
+
+
+
+                                </a>
+
+
+
+
+
+
+                            </li>
+
+
+                            <li class="nav-item">
+
+                                <a href="patients-payment-report.html" class="nav-link">
+
+
+                                    <span>Patients Payment Report</span>
+
+
+
+                                </a>
+
+
+
+
+
+
+                            </li>
+
+
+                            <li class="nav-item">
+
+                                <a href="performance-report.html" class="nav-link">
+
+
+                                    <span>Performance Report</span>
+
+
+
+                                </a>
+
+
+
+
+
+
+                            </li>
+                            <li class="nav-item">
+
+                                <a href="procedure-analysis.html" class="nav-link">
+
+
+                                    <span>Procedure Analysis</span>
+
+
+
+                                </a>
+
+
+
+
+
+
+                            </li>
+
+
+                            <li class="nav-item">
+
+                                <a href="productivity-analysis.html" class="nav-link">
+
+
+                                    <span>Productivity Analysis</span>
+
+
+
+                                </a>
+
+
+
+
+
+
+                            </li>
+
+
+                            <li class="nav-item">
+
+                                <a href="transaction-analysis.html" class="nav-link">
+
+
+                                    <span>Transaction Anaylis</span>
+
+
+
+                                </a>
+
+
+
+
+
+
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#physician" aria-expanded="false"
+                       aria-controls="ui-advanced">
+                        <i class="fas fa-user-md menu-icon"></i>
+                        <span class="menu-title">Physician</span>
+                        <i class="ti-angle-down menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="physician">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item">
+
+                                <a href="physician1.html" class="nav-link">
+
+
+                                    <span>Physician 1</span>
+
+
+
+                                </a>
+
+
+
+
+
+
+                            </li>
+
+
+                            <li class="nav-item">
+
+                                <a href="physician2.html" class="nav-link">
+
+
+                                    <span>Physician 2</span>
+
+
+
+                                </a>
+
+
+
+
+
+
+                            </li>
+
+
+                            <li class="nav-item">
+
+                                <a href="physician3.html" class="nav-link">
+
+
+                                    <span>Physician 3</span>
+
+
+
+                                </a>
+
+
+
+
+
+
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#location" aria-expanded="false"
+                       aria-controls="form-elements">
+                        <i class="fas fa-map-marker-alt menu-icon"></i>
+                        <span class="menu-title">Location</span>
+                        <i class="ti-angle-down menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="location">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item">
+
+                                <a href="location1.html" class="nav-link">
+
+
+                                    <span>Location 1</span>
+
+
+
+                                </a>
+
+
+
+
+
+
+                            </li>
+
+
+                            <li class="nav-item">
+
+                                <a href="location2.html" class="nav-link">
+
+
+                                    <span>Location 2</span>
+
+
+
+                                </a>
+
+
+
+
+
+
+                            </li>
+
+
+                            <li class="nav-item">
+
+                                <a href="location3.html" class="nav-link">
+
+
+                                    <span>Location 3</span>
+
+
+
+                                </a>
+
+
+
+
+
+
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="patients.html">
+                        <i class="fas fa-user-injured menu-icon"></i>
+                        <span class="menu-title">Patients</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="procedures.html">
+                        <i class="fas fa-recycle menu-icon"></i>
+                        <span class="menu-title">Procedure</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="payers.html">
+                        <i class="fas fa-dollar-sign menu-icon"></i>
+                        <span class="menu-title">Payers</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="user-maintenence.html">
+                        <i class="fas fa-users-cog menu-icon"></i>
+                        <span class="menu-title">User Maintenance</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar p-0 d-flex flex-row">
+            <div class="navbar-menu-wrapper d-flex align-items-center">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                    <span class="ti-align-left"></span>
+                </button>
+                <div class="navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                    <a class="navbar-brand brand-logo" href="dashboard.html" style="color:#fff;"><img src="images/logo.png" alt="logo"/></a>
+                    <a class="navbar-brand brand-logo-mini" href="dashboard.html" style="color:#fff;"><img src="images/logo.png" alt="logo"/></a>
+                </div>
+                <ul class="navbar-nav navbar-nav-right ml-auto">
+                    <li class="nav-item nav-search d-none d-sm-flex">
+                        <div class="nav-link d-flex justify-content-center align-items-center">
+                            <input type="text" class="form-control hidden" id="search-field" placeholder="Search...">
+                            <i class="ti-search mx-0" id="search-icon"></i>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center"
+                           id="messageDropdown" href="#" data-toggle="dropdown">
+                            <i class="ti-comment mx-0"></i>
+                            <span class="count"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                             aria-labelledby="messageDropdown">
+                            <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <img src="https://via.placeholder.com/36x36" alt="image" class="profile-pic">
+                                </div>
+                                <div class="preview-item-content flex-grow">
+                                    <h6 class="preview-subject ellipsis font-weight-normal">David Grey
+                                    </h6>
+                                    <p class="font-weight-light small-text text-muted mb-0">
+                                        The meeting is cancelled
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <img src="https://via.placeholder.com/36x36" alt="image" class="profile-pic">
+                                </div>
+                                <div class="preview-item-content flex-grow">
+                                    <h6 class="preview-subject ellipsis font-weight-normal">Tim Cook
+                                    </h6>
+                                    <p class="font-weight-light small-text text-muted mb-0">
+                                        New product launch
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <img src="https://via.placeholder.com/36x36" alt="image" class="profile-pic">
+                                </div>
+                                <div class="preview-item-content flex-grow">
+                                    <h6 class="preview-subject ellipsis font-weight-normal"> Johnson
+                                    </h6>
+                                    <p class="font-weight-light small-text text-muted mb-0">
+                                        Upcoming board meeting
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center"
+                           id="notificationDropdown" href="#" data-toggle="dropdown">
+                            <i class="ti-bell mx-0"></i>
+                            <span class="count"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                             aria-labelledby="notificationDropdown">
+                            <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <div class="preview-icon bg-gradient-success">
+                                        <i class="ti-info mx-0"></i>
+                                    </div>
+                                </div>
+                                <div class="preview-item-content">
+                                    <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                                    <p class="font-weight-light small-text mb-0 text-muted">
+                                        Just now
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <div class="preview-icon bg-gradient-warning">
+                                        <i class="ti-settings mx-0"></i>
+                                    </div>
+                                </div>
+                                <div class="preview-item-content">
+                                    <h6 class="preview-subject font-weight-normal">Settings</h6>
+                                    <p class="font-weight-light small-text mb-0 text-muted">
+                                        Private message
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <div class="preview-icon bg-gradient-info">
+                                        <i class="ti-user mx-0"></i>
+                                    </div>
+                                </div>
+                                <div class="preview-item-content">
+                                    <h6 class="preview-subject font-weight-normal">New user registration</h6>
+                                    <p class="font-weight-light small-text mb-0 text-muted">
+                                        2 days ago
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-profile dropdown">
+                        <a class="nav-link" href="#" data-toggle="dropdown" id="profileDropdown">
+                            <img src="https://via.placeholder.com/30x30" alt="profile"/>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown"
+                             aria-labelledby="profileDropdown">
+                            <a class="dropdown-item"  href="profile.html">
+                                <i class="ti-settings text-primary"></i>
+                                Profile
+                            </a>
+                            <a class="dropdown-item" href="login.html">
+                                <i class="ti-new-window text-primary"></i>
+                                Logout
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                        data-toggle="offcanvas">
+                    <span class="ti-menu"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+            <div class="content-wrapper">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-xl-3 grid-margin">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h4>Active Patients</h4>
+                                        <h4 class="text-white mt-3">800</h4>
+                                        <!--<h6 class="text-muted">35.19% Since last month</h6>-->
+                                    </div>
+                                    <div class="icon-box icon-box-bg-image-warning">
+                                        <i class="fas fa-users gradient-card-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-3 grid-margin">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h4>New Patients</h4>
+                                        <h4 class="text-white mt-3">176</h4>
+                                        <!--<h6 class="text-muted">73.52% Since last month</h6>-->
+                                    </div>
+                                    <div class="icon-box icon-box-bg-image-info">
+                                        <i class="fas fa-users gradient-card-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-3 grid-margin">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h4>CKD Patients</h4>
+                                        <h4 class="text-white mt-3">400</h4>
+                                        <!--<h6 class="text-muted">49.39% Since last month</h6>-->
+                                    </div>
+                                    <div class="icon-box icon-box-bg-image-danger">
+                                        <i class="fas fa-users gradient-card-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-3 grid-margin">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h4>ESRD Patients</h4>
+                                        <h4 class="text-white mt-3">250</h4>
+                                        <!--<h6 class="text-muted">18.33% Since last month</h6>-->
+                                    </div>
+                                    <div class="icon-box icon-box-bg-image-success">
+                                        <i class="fas fa-users gradient-card-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 grid-margin">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-md-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h5 class="card-title mb-2 mb-md-3"></h5>
+                                        <!--<h6 class="text-muted font-weight-normal">Your sales and referral earnings over-->
+                                            <!--the last 30 days.</h6>-->
+                                    </div>
+
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col-xl-4 grid-margin">
+                                        <div class="card icon-box-bg-image-danger">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-center justify-content-between">
+
+                                                    <div>
+                                                        <h6>Average Collection</h6>
+                                                        <h6>12 Month Trend</h6>
+                                                        <h4 class="text-white mt-3">$50k</h4>
+                                                        <!--<h6 class="text-muted">35.19% Since last month</h6>-->
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-xl-4 grid-margin">
+                                        <span style="float:left;font-size: 40px;    position: relative;
+    top: 30%;left: -7%;">-</span>
+                                        <div class="card icon-box-bg-image-danger">
+                                            <div class="card-body" style="position:relative;">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="">
+
+                                                        <h6>Benchmark</h6>
+                                                        <h6 style="color:transparent">Projected </h6>
+                                                        <h4 class="text-white mt-3">$60k</h4>
+                                                        <!--<h6 class="text-muted">73.52% Since last month</h6>-->
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-xl-4 grid-margin">
+                                        <span style="float:left;font-size: 40px;    position: relative;
+    top: 30%;left: -7%;">=</span>
+                                        <div class="card icon-box-bg-image-danger">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+
+                                                        <h6>Varience</h6>
+                                                        <h6 style="color:transparent">text</h6>
+                                                        <h4 class="text-white mt-3">($10k)</h4>
+                                                        <!--<h6 class="text-muted">49.39% Since last month</h6>-->
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class=" mt-4">
+                                    <canvas id="chart-sales"></canvas>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Target VS Achievement</h4>
+                                <div id="chart-container"></div>
+                                <div class="mb-4"></div>
+                                <div id="chart-container-yearly"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 grid-margin">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-md-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h5 class="card-title mb-2 mb-md-3">Account Receivables</h5>
+                                        <!--<h6 class="text-muted font-weight-normal">Your sales and referral earnings over the last 30 days.</h6>-->
+                                    </div>
+
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-md-8 grid-margin stretch-card">
+
+                                        <div class="mt-4" style="width:100%;">
+                                            <!--<canvas id="orders-chart-azure"></canvas>-->
+                                            <canvas id="Chart1"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 grid-margin stretch-card">
+
+                                        <!--<div class="card">-->
+                                            <div class="card-body">
+                                                <!--<h4 class="card-title">Provider Balance</h4>-->
+
+                                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                                    <div>
+                                                        <h6 class="text-white">Primary Open Balance</h6>
+                                                    </div>
+                                                    <div class="icon-box icon-box-bg-image-success">
+                                                        50k
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                                    <div>
+                                                        <h6 class="text-white">Secondary Open Balance</h6>
+                                                    </div>
+                                                    <div class="icon-box icon-box-bg-image-warning">
+                                                        60k
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                                    <div>
+                                                        <h6 class="text-white">Patients Balance</h6>
+                                                    </div>
+                                                    <div class="icon-box icon-box-bg-image-info">
+                                                        10k
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                <div class="row">
+                    <div class="col-md-6 col-xl-4 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-title">Revenue / Patient Type</h6>
+                                <h6 class="card-description">12 months trending</h6>
+                                <div class="">
+                                    <canvas id="traffic-chart" width="200" height="200"></canvas>
+                                    <!--<canvas id="piechart"></canvas>-->
+                                </div>
+
+                                <div id="traffic-chart-legend" class="chartjs-legend traffic-chart-legend mt-5"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xl-4 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Profit & Loss / Provider</h4>
+
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h6 class="text-white">Avg Cost / Provider</h6>
+                                    </div>
+                                    <div class="icon-box">
+                                        50k
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h6 class="text-white">Avg Revenue / Provider </h6>
+                                    </div>
+                                    <div class="icon-box">
+                                        60k
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h6 class="text-white">Net Profit / Loss</h6>
+                                    </div>
+                                    <div class="icon-box">
+                                        10k
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title" style="line-height: 25px;">Revenue Forcast Based on Patient Volume</h4>
+                                <h6 class="card-description">12 months trending</h6>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h6 class="text-white">Avg Patients Inc / Dec</h6>
+                                    </div>
+                                    <div class="icon-box">
+                                        12%
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h6 class="text-white">Expected Encounters</h6>
+                                    </div>
+                                    <div class="icon-box">
+                                        250
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h6 class="text-white">Avg Revenue / Encounter</h6>
+                                    </div>
+                                    <div class="icon-box">
+                                        100
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h6 class="text-white">Expected Increase in Revenue</h6>
+                                    </div>
+                                    <div class="icon-box">
+                                        $25000
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- partial:partials/_footer.html -->
+                <footer class="footer">
+                    <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                    <span class="text-center text-sm-left d-block d-sm-inline-block">Copyright © 2020<a
+                            href="#" target="_blank" class="ml-1">Transcure</a>. All rights reserved.</span>
+                        <!--<span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Designed by: Transcure<i-->
+                                <!--class="ti-heart text-danger ml-1"></i></span>-->
+                    </div>
+                </footer>
+                <!-- partial -->
+                </div>
+
+
+
+                </div>
+            <!-- content-wrapper ends -->
+
+        </div>
+        <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+</div>
+<!-- container-scroller -->
+
+<!-- base:js -->
+<script src="vendors/js/vendor.bundle.base.js"></script>
+<!-- endinject -->
+<!-- Plugin js for this page-->
+<script src="vendors/flot/jquery.flot.js"></script>
+<script src="vendors/flot/jquery.flot.resize.js"></script>
+<script src="vendors/chart.js/Chart.min.js"></script>
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+<script type="text/javascript" src="https://unpkg.com/jquery-fusioncharts@1.1.0/dist/fusioncharts.jqueryplugin.js"></script>
+
+<!-- End plugin js for this page-->
+<!-- inject:js -->
+<script src="js/off-canvas.js"></script>
+<script src="js/hoverable-collapse.js"></script>
+<script src="js/template.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/todolist.js"></script>
+<!-- endinject -->
+<!-- plugin js for this page -->
+<!-- End plugin js for this page -->
+<!-- Custom js for this page-->
+<script src="js/dashboard2.js"></script>
+<!-- End custom js for this page-->
+</body>
+
+</html>
+

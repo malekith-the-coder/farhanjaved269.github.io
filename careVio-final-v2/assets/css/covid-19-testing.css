@@ -1,0 +1,71 @@
+.banner-bg{
+    /* width: 1120px; */
+    height: 215px;
+  border-radius: 8px;
+  background-color: #f6f6fd;
+}
+
+.banner-heading{
+    /* font-family: Sora; */
+    font-size: 48px;
+    color:#1f1f43;
+    padding: 72px 40px;
+    font-weight: 600;
+}
+
+.tab{
+    width: 373px;
+}
+
+.tab ul li a{
+    background: white !important;
+    color: #8d8dc9;
+    font-size: 20px;
+  font-weight: 500;
+}
+
+.tab .nav-pills .nav-link.active{
+    color: #1f1f43 !important;
+    border-bottom: 1px solid #1e1fd5;
+    border-radius: 0px;
+}
+.tab-content{
+    font-size: 16px;
+    color: #45457f;
+    font-family: Sora;
+}
+
+.text-purple{
+    color: #1f1f43;
+}
+
+.text-light-purple{
+    color: #45457f;
+}
+
+.button{
+    width: 210px;
+    height: 64px;
+    border-radius: 4px;
+    background-color: #1e1fd5;
+    color: white;
+    font-size: 14px;
+    padding-top: 20px;
+}
+.tab-content .button:hover{
+    color: white;
+}
+
+@media only screen and (max-width: 767px){
+    .tab{
+        width: 100%;
+    }
+
+    .tab ul li a{
+        background: white !important;
+        color: #8d8dc9;
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+}
