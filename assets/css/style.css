@@ -1194,7 +1194,7 @@ html {
   }
   
   .home .bg {
-    background-image: url(../img/2.jpg);
+    background-image: url("../img/profile-picture.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
