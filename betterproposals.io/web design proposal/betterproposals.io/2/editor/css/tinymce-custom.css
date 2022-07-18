@@ -1,0 +1,61 @@
+.tox-tinymce {
+    border: none !important;
+}
+.tox .tox-edit-area__iframe {
+    background-color: transparent !important;
+}
+
+.block {
+    position: relative;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+#editor-toolbar { position:absolute; }
+#editor-toolbar.isfixed {
+	position:fixed;
+	top: 50px;
+}
+.editor-table {
+	width:100%;
+	border-spacing: 0;
+}
+.editor-table tr td { 
+	border: none;
+	border-bottom: 1px solid #D7D9E0 !important;
+}
+.editor-table td { padding: 15px; }
+.editor-table thead { background-color: #F5F7F8; }
+.editor-table thead tr td { border-bottom: 2px solid #D7D9E0 !important; }
+.editor-table thead td { 
+	border-right: 1px solid #FFF !important; 
+	font-family: "halyard-display", sans-serif !important;
+	font-size: 12px;
+	font-weight: 500;
+	color: #676B73 !important;
+	text-transform: uppercase;
+}
+
+
+
+/* UIKIT OverRide */
+.editable-content h1,
+.editable-content .uk-h1,
+.editable-content h2,
+.editable-content .uk-h2,
+.editable-content h3,
+.editable-content .uk-h3,
+.editable-content h4,
+.editable-content .uk-h4,
+.editable-content h5,
+.editable-content .uk-h5,
+.editable-content h6,
+.editable-content .uk-h6,
+.editable-content .uk-heading-small,
+.editable-content .uk-heading-medium,
+.editable-content .uk-heading-large,
+.editable-content .uk-heading-xlarge,
+.editable-content .uk-heading-2xlarge,
+.editable-content blockquote{
+    color: inherit;
+}
