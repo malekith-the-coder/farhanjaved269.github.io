@@ -1,0 +1,766 @@
+.content-block.trim, .trim-preview {
+    mask-size: cover;
+    mask-position: bottom;
+    -webkit-mask-size: cover;
+    -webkit-mask-position: bottom;
+    -webkit-mask-position-y: 99.99%; /* Fix for safari subpixel */
+	transition: all 0.2s ease;
+}
+.trim-preview {
+	max-height: 100%;
+	height: auto;
+	color: #181c25;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-family: "halyard-display", sans-serif;
+	font-size: 0.75em;
+	letter-spacing: 0.15em;
+	text-align: center;
+	margin-bottom: 0px !important;
+	padding-bottom: 40px !important;
+	padding-top: 10px !important;
+}
+.trim-preview.light {
+	color: #FFF;
+}
+.trim-preview-text {
+	padding-top: 15px;
+}
+/*.trim-preview {
+	background: #FF0000;
+}*/
+/*.trim-hidden {
+	transform: scaleY(0);
+}*/
+.trim + .add-menu-block.opened {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+
+/* ABSTRACT */
+.content-block.trim.trim-abstract, .trim-preview.abstract {
+    mask-image: url(https://betterproposals.io/2/editor/images/trims/abstract.svg);
+    -webkit-mask-image: url(https://betterproposals.io/2/editor/images/trims/abstract.svg);
+    padding-bottom: calc(100vw * 0.01);
+}
+.trim.trim-abstract + .content-block {
+    padding-top: calc(100vw * 0.025);
+}
+.trim.trim-abstract + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-abstract + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.025);	
+}
+.trim.trim-abstract + .addblock-container {
+    margin-top: calc(-100vw * 0.03);
+}
+.trim.trim-abstract .addmenu-button {
+    top: calc(100vw * 0.011);
+}
+
+/* ARROW */
+.content-block.trim.trim-arrow, .trim-preview.arrow {
+    mask-image: url(https://betterproposals.io/2/editor/images/trims/arrow.svg);
+    -webkit-mask-image: url(https://betterproposals.io/2/editor/images/trims/arrow.svg);
+    padding-bottom: calc(100vw * 0.015);
+}
+.trim.trim-arrow + .content-block {
+    padding-top: calc(100vw * 0.02);
+}
+.trim.trim-arrow + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-arrow + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.02);	
+}
+.trim.trim-arrow + .addblock-container {
+    margin-top: calc(-100vw * 0.022);
+}
+.trim.trim-arrow .addmenu-button {
+    top: calc(100vw * 0.015);
+}
+
+/* ARROW DOUBLE */
+.content-block.trim.trim-arrow-double, .trim-preview.arrow-double {
+    mask-image: url("https://betterproposals.io/2/editor/images/trims/arrow-double.svg");
+    -webkit-mask-image: url("https://betterproposals.io/2/editor/images/trims/arrow-double.svg");
+    padding-bottom: calc(100vw * 0.015);
+}
+.trim.trim-arrow-double + .content-block {
+    padding-top: calc(100vw * 0.03);
+}
+.trim.trim-arrow-double + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-arrow-double + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.02);	
+}
+.trim.trim-arrow-double + .addblock-container {
+    margin-top: calc(-100vw * 0.04);
+}
+.trim.trim-arrow-double + .addblock-container .add-menu-block.opened {
+    padding-top: 90px;
+	max-height: 310px;
+}
+.trim.trim-arrow-double .addmenu-button {
+    top: calc(100vw * 0.015);
+}
+
+/* BOOK */
+.content-block.trim.trim-book, .trim-preview.book {
+    mask-image: url("https://betterproposals.io/2/editor/images/trims/book.svg");
+    -webkit-mask-image: url("https://betterproposals.io/2/editor/images/trims/book.svg");
+    padding-bottom: calc(100vw * 0.01);
+}
+.trim.trim-book + .content-block {
+    padding-top: calc(100vw * 0.03);
+}
+.trim.trim-book + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-book + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.03);	
+}
+.trim.trim-book + .addblock-container {
+    margin-top: calc(-100vw * 0.03);
+}
+.trim.trim-book .addmenu-button {
+    top: calc(100vw * 0.015);
+}
+
+/* BOOK TWO */
+.content-block.trim.trim-book-two, .trim-preview.book-two {
+    mask-image: url("https://betterproposals.io/2/editor/images/trims/book-two.svg");
+    -webkit-mask-image: url("https://betterproposals.io/2/editor/images/trims/book-two.svg");
+    padding-bottom: calc(100vw * 0.015);
+}
+.trim.trim-book-two + .content-block {
+    padding-top: calc(100vw * 0.03);
+}
+.trim.trim-book-two + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-book-two + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.03);	
+}
+.trim.trim-book-two + .addblock-container {
+    margin-top: calc(-100vw * 0.04);
+}
+.trim.trim-book-two + .addblock-container .add-menu-block.opened {
+    padding-top: 90px;
+	max-height: 310px;
+}
+.trim.trim-book-two .addmenu-button {
+    top: calc(100vw * 0.025);
+}
+
+/* BULGE */
+.content-block.trim.trim-bulge, .trim-preview.bulge {
+    mask-image: url("https://betterproposals.io/2/editor/images/trims/bulge.svg");
+    -webkit-mask-image: url("https://betterproposals.io/2/editor/images/trims/bulge.svg");
+    padding-bottom: calc(100vw * 0.015);
+}
+.trim.trim-bulge + .content-block {
+    padding-top: calc(100vw * 0.035);
+}
+.trim.trim-bulge + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-bulge + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.03);	
+}
+.trim.trim-bulge + .addblock-container {
+    margin-top: calc(-100vw * 0.04);
+}
+.trim.trim-bulge + .addblock-container .add-menu-block.opened {
+    padding-top: 90px;
+	max-height: 310px;
+}
+.trim.trim-bulge .addmenu-button {
+    top: calc(100vw * 0.015);
+}
+
+
+/* BUNTING */
+.content-block.trim.trim-bunting, .trim-preview.bunting {
+    mask-image: url(https://betterproposals.io/2/editor/images/trims/bunting.svg);
+    -webkit-mask-image: url(https://betterproposals.io/2/editor/images/trims/bunting.svg);
+    padding-bottom: calc(100vw * 0.01);
+}
+.trim.trim-bunting + .content-block {
+    padding-top: calc(100vw * 0.03);
+}
+.trim.trim-bunting + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-bunting + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.03);	
+}
+.trim.trim-bunting + .addblock-container {
+    margin-top: calc(-100vw * 0.03);
+}
+.trim.trim-bunting .addmenu-button {
+    top: calc(100vw * 0.013);
+}
+
+/* BUNTING ROUNDED */
+.content-block.trim.trim-bunting-rounded, .trim-preview.bunting-rounded {
+    mask-image: url(https://betterproposals.io/2/editor/images/trims/bunting-rounded.svg);
+    -webkit-mask-image: url(https://betterproposals.io/2/editor/images/trims/bunting-rounded.svg);
+    padding-bottom: calc(100vw * 0.01);
+}
+.trim.trim-bunting-rounded + .content-block {
+    padding-top: calc(100vw * 0.025);
+}
+.trim.trim-bunting-rounded + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-bunting-rounded + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.02);	
+}
+.trim.trim-bunting-rounded + .addblock-container {
+    margin-top: calc(-100vw * 0.02);
+}
+.trim.trim-bunting-rounded .addmenu-button {
+    top: calc(100vw * 0.01);
+}
+
+/* CHISEL */
+.content-block.trim.trim-chisel, .trim-preview.chisel {
+    mask-image: url(https://betterproposals.io/2/editor/images/trims/chisel.svg);
+    -webkit-mask-image: url(https://betterproposals.io/2/editor/images/trims/chisel.svg);
+    padding-bottom: calc(100vw * 0.01);
+}
+.trim.trim-chisel + .content-block {
+    padding-top: calc(100vw * 0.03);
+}
+.trim.trim-chisel + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-chisel + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.025);	
+}
+.trim.trim-chisel + .addblock-container {
+    margin-top: calc(-100vw * 0.02);
+}
+.trim.trim-chisel .addmenu-button {
+    top: calc(100vw * 0.011);
+}
+
+/* CHISEL DOUBLE */
+.content-block.trim.trim-chisel-double, .trim-preview.chisel-double {
+    mask-image: url(https://betterproposals.io/2/editor/images/trims/chisel-double.svg);
+    -webkit-mask-image: url(https://betterproposals.io/2/editor/images/trims/chisel-double.svg);
+    padding-bottom: calc(100vw * 0.01);
+
+}
+.trim.trim-chisel-double + .content-block {
+    padding-top: calc(100vw * 0.03);
+}
+.trim.trim-chisel-double + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-chisel-double + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.02);	
+}
+.trim.trim-chisel-double + .addblock-container {
+    margin-top: calc(-100vw * 0.03);
+}
+.trim.trim-chisel-double .addmenu-button {
+    top: calc(100vw * 0.011);
+}
+
+/* CURVE */
+.content-block.trim.trim-curve, .trim-preview.curve {
+    mask-image: url(https://betterproposals.io/2/editor/images/trims/curve.svg);
+    -webkit-mask-image: url(https://betterproposals.io/2/editor/images/trims/curve.svg);
+    padding-bottom: calc(100vw * 0.01);
+}
+.trim.trim-curve + .content-block {
+    padding-top: calc(100vw * 0.03);
+}
+.trim.trim-curve + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-curve + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.025);	
+}
+.trim.trim-curve + .addblock-container {
+    margin-top: calc(-100vw * 0.03);
+}
+.trim.trim-curve + .addblock-container .add-menu-block.opened {
+    padding-top: 90px;
+	max-height: 310px;
+}
+.trim.trim-curve .addmenu-button {
+    top: calc(100vw * 0.021);
+}
+
+/* CURVE DOUBLE */
+.content-block.trim.trim-curve-double, .trim-preview.curve-double {
+    mask-image: url(https://betterproposals.io/2/editor/images/trims/curve-double.svg);
+    -webkit-mask-image: url(https://betterproposals.io/2/editor/images/trims/curve-double.svg);
+    padding-bottom: calc(100vw * 0.01);
+}
+.trim.trim-curve-double + .content-block {
+    padding-top: calc(100vw * 0.035);
+}
+.trim.trim-curve-double + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-curve-double + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.025);	
+}
+.trim.trim-curve-double + .addblock-container {
+    margin-top: calc(-100vw * 0.04);
+}
+.trim.trim-curve-double + .addblock-container .add-menu-block.opened {
+    padding-top: 90px;
+	max-height: 310px;
+}
+
+.trim.trim-curve-double .addmenu-button {
+    top: calc(100vw * 0.024);
+}
+
+/* GRAPH */
+.content-block.trim.trim-graph, .trim-preview.graph {
+    mask-image: url(https://betterproposals.io/2/editor/images/trims/graph.svg);
+    -webkit-mask-image: url(https://betterproposals.io/2/editor/images/trims/graph.svg);
+    padding-bottom: calc(100vw * 0.03);
+}
+.trim.trim-graph + .content-block {
+    padding-top: calc(100vw * 0.035);
+}
+.trim.trim-graph + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-graph + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.04);	
+}
+.trim.trim-graph + .addblock-container {
+    margin-top: calc(-100vw * 0.03);
+}
+.trim.trim-graph .addmenu-button {
+    top: calc(100vw * 0.01);
+}
+
+/* GRAPH DOUBLE */
+.content-block.trim.trim-graph-double, .trim-preview.graph-double {
+    mask-image: url(https://betterproposals.io/2/editor/images/trims/graph-double.svg);
+    -webkit-mask-image: url(https://betterproposals.io/2/editor/images/trims/graph-double.svg);
+    padding-bottom: calc(100vw * 0.03);
+}
+.trim.trim-graph-double + .content-block {
+    padding-top: calc(100vw * 0.035);
+}
+.trim.trim-graph-double + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-graph-double + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.03);	
+}
+.trim.trim-graph-double + .addblock-container {
+    margin-top: calc(-100vw * 0.04);
+}
+.trim.trim-graph-double + .addblock-container .add-menu-block.opened {
+    padding-top: 90px;
+	max-height: 310px;
+}
+.trim.trim-graph-double .addmenu-button {
+    top: calc(100vw * 0.016);
+}
+
+/* GRAPH TWO */
+.content-block.trim.trim-graph-two, .trim-preview.graph-two {
+    mask-image: url(https://betterproposals.io/2/editor/images/trims/graph-two.svg);
+    -webkit-mask-image: url(https://betterproposals.io/2/editor/images/trims/graph-two.svg);
+    padding-bottom: calc(100vw * 0.02);
+}
+.trim.trim-graph-two + .content-block {
+    padding-top: calc(100vw * 0.04);
+}
+.trim.trim-graph-two + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-graph-two + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.04);	
+}
+.trim.trim-graph-two + .addblock-container {
+    margin-top: calc(-100vw * 0.03);
+}
+.trim.trim-graph-two .addmenu-button {
+    top: calc(100vw * 0.016);
+}
+
+/* SKEW LEFT */
+.content-block.trim.trim-skew-left, .trim-preview.skew-left {
+    mask-image: url("https://betterproposals.io/2/editor/images/trims/skew-left.svg");
+    -webkit-mask-image: url("https://betterproposals.io/2/editor/images/trims/skew-left.svg");
+    padding-bottom: calc(100vw * 0.015);
+}
+.trim.trim-skew-left + .content-block {
+    padding-top: calc(100vw * 0.035);
+}
+.trim.trim-skew-left + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-skew-left + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.04);	
+}
+.trim.trim-skew-left + .addblock-container {
+    margin-top: calc(-100vw * 0.04);
+}
+.trim.trim-skew-left + .addblock-container .add-menu-block.opened {
+    padding-top: 90px;
+	max-height: 310px;
+}
+.trim.trim-skew-left .addmenu-button {
+    top: calc(100vw * 0.023);
+}
+
+/* SKEW RIGHT */
+.content-block.trim.trim-skew-right, .trim-preview.skew-right {
+    mask-image: url("https://betterproposals.io/2/editor/images/trims/skew-right.svg");
+    -webkit-mask-image: url("https://betterproposals.io/2/editor/images/trims/skew-right.svg");
+    padding-bottom: calc(100vw * 0.02);
+}
+.trim.trim-skew-right + .content-block {
+    padding-top: calc(100vw * 0.02);
+}
+.trim.trim-skew-right + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-skew-right + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.02);	
+}
+.trim.trim-skew-right + .addblock-container {
+    margin-top: calc(-100vw * 0.03);
+}
+.trim.trim-skew-right .addmenu-button {
+    top: calc(100vw * 0.013);
+}
+
+/*SLANT-DOUBLE*/
+.content-block.trim.trim-slant-double, .trim-preview.slant-double {
+    mask-image: url(https://betterproposals.io/2/editor/images/trims/slant-double.svg);
+    -webkit-mask-image: url(https://betterproposals.io/2/editor/images/trims/slant-double.svg);
+    padding-bottom: calc(100vw * 0.02);
+}
+.trim.trim-slant-double + .content-block {
+    padding-top: calc(100vw * 0.03);
+}
+.trim.trim-slant-double + .content-block.block-fwimage {
+    padding-top: 0;
+}
+.trim.trim-slant-double + .content-block.block-fwimage .block-menuitems{
+    margin-top: calc(100vw * 0.03);
+}
+.trim.trim-slant-double + .addblock-container {
+    margin-top: calc(-100vw * 0.03);
+}
+.trim.trim-slant-double .addmenu-button {
+    top: calc(100vw * 0.002);
+}
+
+/*SLANT-DOUBLE LEFT*/
+.content-block.trim.trim-slant-double-left, .trim-preview.slant-double-left {
+    mask-image: url(https://betterproposals.io/2/editor/images/trims/slant-double-left.svg);
+    -webkit-mask-image: url(https://betterproposals.io/2/editor/images/trims/slant-double-left.svg);
+    padding-bottom: calc(100vw * 0.02);
+}
+.trim.trim-slant-double-left + .content-block {
+    padding-top: calc(100vw * 0.04);
+}
+.trim.trim-slant-double-left + .content-block.block-fwimage {
+    padding-top: 0;
+}
+.trim.trim-slant-double-left + .content-block.block-fwimage .block-menuitems{
+    margin-top: calc(100vw * 0.03);
+}
+.trim.trim-slant-double-left + .addblock-container {
+    margin-top: calc(-100vw * 0.05);
+}
+.trim.trim-slant-double-left + .addblock-container .add-menu-block.opened {
+    padding-top: 90px;
+	max-height: 310px;
+}
+.trim.trim-slant-double-left .addmenu-button {
+    top: calc(100vw * 0.024);
+}
+
+/* SLANT-REFLECT */
+.content-block.trim.trim-slant-reflect, .trim-preview.slant-reflect {
+    mask-image: url(https://betterproposals.io/2/editor/images/trims/slant-reflect.svg);
+    -webkit-mask-image: url(https://betterproposals.io/2/editor/images/trims/slant-reflect.svg);
+    padding-bottom: calc(100vw * 0.02);
+}
+.trim.trim-slant-reflect + .content-block {
+    padding-top: calc(100vw * 0.055);
+}
+.trim.trim-slant-reflect + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-slant-reflect + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.055);	
+}
+.trim.trim-slant-reflect + .addblock-container {
+    margin-top: calc(-100vw * 0.055);
+}
+.trim.trim-slant-reflect + .addblock-container .add-menu-block.opened {
+    padding-top: 90px;
+	max-height: 310px;
+}
+.trim.trim-slant-reflect .addmenu-button {
+    top: calc(100vw * 0.022);
+}
+
+/* SLANT-ROUNDED */
+.content-block.trim.trim-slant-rounded, .trim-preview.slant-rounded {
+    mask-image: url(https://betterproposals.io/2/editor/images/trims/slant-rounded.svg);
+    -webkit-mask-image: url(https://betterproposals.io/2/editor/images/trims/slant-rounded.svg);
+    padding-bottom: calc(100vw * 0.02);
+}
+.trim.trim-slant-rounded + .content-block {
+    padding-top: calc(100vw * 0.03);
+}
+.trim.trim-slant-rounded + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-slant-rounded + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.03);	
+}
+.trim.trim-slant-rounded + .addblock-container {
+    margin-top: calc(-100vw * 0.03);
+}
+.trim.trim-slant-rounded + .addblock-container .add-menu-block.opened {
+    padding-top: 90px;
+	max-height: 310px;
+}
+.trim.trim-slant-rounded .addmenu-button {
+    top: calc(100vw * 0.019);
+}
+
+/*SLANT-SINGLE*/
+.content-block.trim.trim-slant-single, .trim-preview.slant-single {
+    mask-image: url(https://betterproposals.io/2/editor/images/trims/slant-single.svg);
+    -webkit-mask-image: url(https://betterproposals.io/2/editor/images/trims/slant-single.svg);
+    padding-bottom: calc(100vw * 0.02);
+}
+.trim.trim-slant-single + .content-block {
+    padding-top: calc(100vw * 0.03);
+}
+.trim.trim-slant-single + .content-block.block-fwimage {
+    padding-top: 0;
+}
+.trim.trim-slant-single + .content-block.block-fwimage .block-menuitems{
+    margin-top: calc(100vw * 0.025);
+}
+.trim.trim-slant-single + .addblock-container {
+    margin-top: calc(-100vw * 0.03);
+}
+.trim.trim-slant-single .addmenu-button {
+    top: calc(100vw * 0.01);
+}
+
+
+/*SLANT-TRIPLE*/
+.content-block.trim.trim-slant-triple, .trim-preview.slant-triple {
+    mask-image: url(https://betterproposals.io/2/editor/images/trims/slant-triple.svg);
+    -webkit-mask-image: url(https://betterproposals.io/2/editor/images/trims/slant-triple.svg);
+    padding-bottom: calc(100vw * 0.02);
+}
+.trim.trim-slant-triple + .content-block {
+    padding-top: calc(100vw * 0.03);
+}
+.trim.trim-slant-triple + .content-block.block-fwimage {
+    padding-top: 0;
+}
+.trim.trim-slant-triple + .content-block.block-fwimage .block-menuitems{
+    margin-top: calc(100vw * 0.025);
+}
+.trim.trim-slant-triple + .addblock-container {
+    margin-top: calc(-100vw * 0.03);
+}
+.trim.trim-slant-triple .addmenu-button {
+    top: calc(100vw * 0.006);
+}
+
+
+/* SLANTED-TRIANGLE */
+.content-block.trim.trim-slanted-triangle, .trim-preview.slanted-triangle {
+    mask-image: url(https://betterproposals.io/2/editor/images/trims/slanted-triangle.svg);
+    -webkit-mask-image: url(https://betterproposals.io/2/editor/images/trims/slanted-triangle.svg);
+    padding-bottom: calc(100vw * 0.02);
+}
+.trim.trim-slanted-triangle + .content-block {
+    padding-top: calc(100vw * 0.03);
+}
+.trim.trim-slanted-triangle + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-slanted-triangle + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.095);	
+}
+.trim.trim-slanted-triangle + .addblock-container {
+    margin-top: calc(-100vw * 0.03);
+}
+.trim.trim-slanted-triangle .addmenu-button {
+    top: calc(100vw * 0.016);
+}
+
+/* SMALL-CIRCLE */
+.content-block.trim.trim-small-circle, .trim-preview.small-circle {
+    mask-image: url(https://betterproposals.io/2/editor/images/trims/small-circle.svg);
+    -webkit-mask-image: url(https://betterproposals.io/2/editor/images/trims/small-circle.svg);
+    padding-bottom: calc(100vw * 0.025);
+}
+.trim.trim-small-circle + .content-block {
+    padding-top: calc(100vw * 0.025);
+}
+.trim.trim-small-circle + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-small-circle + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.025);	
+}
+.trim.trim-small-circle + .addblock-container {
+    margin-top: calc(-100vw * 0.03);
+}
+.trim.trim-small-circle .addmenu-button {
+    top: calc(100vw * -0.003);
+}
+
+/* SMALL-TRIANGLE */
+.content-block.trim.trim-small-triangle, .trim-preview.small-triangle {
+    mask-image: url(https://betterproposals.io/2/editor/images/trims/small-triangle.svg);
+    -webkit-mask-image: url(https://betterproposals.io/2/editor/images/trims/small-triangle.svg);
+    padding-bottom: calc(100vw * 0.025);
+}
+.trim.trim-small-triangle + .content-block {
+    padding-top: calc(100vw * 0.025);
+}
+.trim.trim-small-triangle + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-small-triangle + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.025);	
+}
+.trim.trim-small-triangle + .addblock-container {
+    margin-top: calc(-100vw * 0.03);
+}
+.trim.trim-small-triangle .addmenu-button {
+    top: calc(100vw * -0.003);
+}
+
+/* SMALL-WAVE */
+.content-block.trim.trim-small-wave, .trim-preview.small-wave {
+    mask-image: url(https://betterproposals.io/2/editor/images/trims/small-wave.svg);
+    -webkit-mask-image: url(https://betterproposals.io/2/editor/images/trims/small-wave.svg);
+    padding-bottom: calc(100vw * 0.02);
+}
+.trim.trim-small-wave + .content-block {
+    padding-top: calc(100vw * 0.03);
+}
+.trim.trim-small-wave + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-small-wave + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.03);	
+}
+.trim.trim-small-wave + .addblock-container {
+    margin-top: calc(-100vw * 0.03);
+}
+.trim.trim-small-wave .addmenu-button {
+    top: calc(100vw * 0.015);
+}
+
+/* SPIKEY */
+.content-block.trim.trim-spikey, .trim-preview.spikey {
+    mask-image: url(https://betterproposals.io/2/editor/images/trims/spikey.svg);
+    -webkit-mask-image: url(https://betterproposals.io/2/editor/images/trims/spikey.svg);
+    padding-bottom: calc(100vw * 0.02);
+}
+.trim.trim-spikey + .content-block {
+    padding-top: calc(100vw * 0.03);
+}
+.trim.trim-spikey + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-spikey + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.03);	
+}
+.trim.trim-spikey + .addblock-container {
+    margin-top: calc(-100vw * 0.03);
+}
+.trim.trim-spikey .addmenu-button {
+    top: calc(100vw * -0.002);
+}
+
+/* WAVE SINGLE */
+.content-block.trim.trim-wave-single, .trim-preview.wave-single {
+    mask-image: url(https://betterproposals.io/2/editor/images/trims/wave-single.svg);
+    -webkit-mask-image: url(https://betterproposals.io/2/editor/images/trims/wave-single.svg);
+    padding-bottom: calc(100vw * 0.02);
+}
+.trim.trim-wave-single + .content-block {
+    padding-top: calc(100vw * 0.03);
+}
+.trim.trim-wave-single + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-wave-single + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.03);	
+}
+.trim.trim-wave-single + .addblock-container {
+    margin-top: calc(-100vw * 0.03);
+}
+.trim.trim-wave-single .addmenu-button {
+    top: calc(100vw * 0.01);
+}
+
+/* WAVES DOUBLE */
+.content-block.trim.trim-waves-double, .trim-preview.waves-double {
+    mask-image: url(https://betterproposals.io/2/editor/images/trims/waves-double.svg);
+    -webkit-mask-image: url(https://betterproposals.io/2/editor/images/trims/waves-double.svg);
+    padding-bottom: calc(100vw * 0.02);
+}
+.trim.trim-waves-double + .content-block {
+    padding-top: calc(100vw * 0.035);
+}
+.trim.trim-waves-double + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-waves-double + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.03);	
+}
+.trim.trim-waves-double + .addblock-container {
+    margin-top: calc(-100vw * 0.04);
+}
+.trim.trim-waves-double .addmenu-button {
+    top: calc(100vw * 0.002);
+}
+
+/* WAVES TRIPLE */
+.content-block.trim.trim-waves-triple, .trim-preview.waves-triple {
+    mask-image: url(https://betterproposals.io/2/editor/images/trims/waves-triple.svg);
+    -webkit-mask-image: url(https://betterproposals.io/2/editor/images/trims/waves-triple.svg);
+    padding-bottom: calc(100vw * 0.02);
+}
+.trim.trim-waves-triple + .content-block {
+    padding-top: calc(100vw * 0.025);
+}
+.trim.trim-waves-triple + .content-block.block-fwimage {
+	padding-top: 0;
+}
+.trim.trim-waves-triple + .content-block.block-fwimage .block-menuitems {
+    margin-top: calc(100vw * 0.03);	
+}
+.trim.trim-waves-triple + .addblock-container {
+    margin-top: calc(-100vw * 0.03);
+}
+.trim.trim-waves-triple .addmenu-button {
+    top: calc(100vw * 0.012);
+}

@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.topbar-web {
+	height: 55px;
+	background-color: #181C25; 
+	width: 100%; 
+	position:fixed; 
+	z-index:9999; 
+	top: 0;
+	font-weight:300;
+	padding: 0px;
+	font-size: 13px;
+	letter-spacing: 0.04em;
+	font-family: halyard-display, sans-serif;
+	border-bottom: 1px solid #494c54;
+	color: #FFF;
+	line-height: 1em;
+}
+.website-template {
+	margin-top: 45px;
+}
+.topbar-web img {
+	height: 25px;
+	width: auto;
+	margin-left: 10px;
+}
+.topbar-web .button {
+    padding: 17px 20px 0 20px;
+    font-size: 16px;
+    margin: 0 0 0 0;
+    border-radius: 0px;
+	height: 54px;
+}
+.topbar-web .button.pink { background-color: #ED5373 }
+.topbar-web .button.pink:hover { background-color: #f06d88 }
+.topbar-web .button.pink:active { background-color: #97354a }
+
+.topbar-web .text {
+	font-weight: 500;
+	font-size: 1.3em;
+	line-height: 1.1em;
+	text-align: center;
+}
+.topbar-web .highlight {
+	background-color: #F9F5AE;
+	padding: 0 5px;
+	font-style: italic;
+	color: #181C25;
+	border-radius: 2px;
+}
+.topbar-web .smalltext {
+	font-size: 0.7em;
+	font-weight: 300;
+}
+
+.pt-header-empty {
+	min-height: 10px;
+	padding: 5px 35px;
+}
+
+.editable-content h1 {
+	display: block !important;
+}
