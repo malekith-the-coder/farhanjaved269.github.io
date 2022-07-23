@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/* CSS Document */
+body.approval-pending {
+	margin-top: 56px;
+}
+.nav {
+	padding-top: 40px;
+}
+.nav.approval-pending {
+	margin-top: 56px;
+}
+.hidden-block {
+	display: none;
+}
+
+/* Preview mode */
+.ribbon-wrapper-preview {
+  width: 185px;
+  height: 188px;
+  overflow: hidden;
+  position: fixed;
+  top: -3px;
+  right: -3px;
+  z-index: 999;
+}
+
+.ribbon-preview {
+  font: bold 15px Sans-Serif;
+  text-align: center;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  transform: rotate(45deg);
+  position: relative;
+  padding: 7px 0;
+  left: -5px;
+  top: 40px;
+  width: 250px;
+  background-color: #7B8290;
+  color: #FFF;
+  font-size: 0.75em;
+}
+
+.ribbon-preview:before, .ribbon-preview:after {
+  content: "";
+  border-top:   3px solid #6e8900;   
+  border-left:  3px solid transparent;
+  border-right: 3px solid transparent;
+  position:absolute;
+  bottom: -3px;
+}
+
+.ribbon-preview:before {
+  left: 0;
+}
+.ribbon-preview:after { right: 0; }
+
+
+.bottombar {
+	height: 40px; 
+	background-color: #FFF; 
+	width: 200px; 
+	position:fixed; 
+	z-index:9999; 
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight:300;
+	padding: 0px 10px;
+	font-size: 16px;
+	letter-spacing: 0.04em;
+	text-align: center;
+	font-family: halyard-display, sans-serif;
+	border: 1px solid #e3e6ed;
+	border-bottom: none;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.bottombar a {
+	color: #7c7d80;
+	transition: all 0.2s ease;
+}
+.bottombar a:hover {
+	color: #181c25;
+}
+
+.sidebar {
+	padding: 0 0 69px 0;
+}
+
+/* PRICING TABLES */
+.pt-header {
+	padding: 20px 35px;
+}
+.pt-header-empty {
+	min-height: 10px;
+	padding: 5px 35px;
+}
+.pt-col60 { width: 60%; float: left; }
+.pt-col75 { width: 75%; float: left; }
+
+.pt-lineitem {
+	padding: 8px 15px;
+}
+.pt-lineitem.pt-choice {
+	padding-left: 13px;
+	padding-right: 13px;
+}
+
+/* Signature block */
+.signature-block {
+	margin-bottom: 20px;
+}
+.signature-block.inactive {
+	pointer-events: none;
+	opacity: 0.5;
+}
+.sig-tab-link inactive {
+	cursor: default;
+}
+.signed-name-field {
+	height: 50px;
+}
+.signed-name-field, .signed-name {
+	font-family: 'adage-script-jf', sans-serif;
+	font-size: 30px;
+}

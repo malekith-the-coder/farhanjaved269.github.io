@@ -1,4 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-betterproposals.io	TRUE	/	FALSE	1999999999	PHPSESSID	o7k1ah63pj314pe1igs3uda020
-
