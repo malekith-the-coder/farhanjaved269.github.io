@@ -1,86 +1,1078 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Farhan's Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800;900&family=Urbanist:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
-  <body class="home at-top"><div id="preloader" class="preloader off"><div class="black_wall"></div><div class="loader"></div></div>
-    <!-- Header Starts -->
-    <header class="header" id="navbar-collapse-toggle">
-        <!-- Fixed Navigation Starts -->
-        <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1 no-transform revealator-within">
-            <li class="icon-box active">
-                <i class="fa fa-home"></i>
-                <a href="index.html">
-                    <h2>Home</h2>
-                </a>
-            </li>
-            <li class="icon-box">
-                <i class="fa fa-user"></i>
-                <a href="about.html">
-                    <h2>About</h2>
-                </a>
-            </li>
-            <li class="icon-box">
-                <i class="fa fa-briefcase"></i>
-                <a href="portfolio.html">
-                    <h2>Portfolio</h2>
-                </a>
-            </li>
-            <li class="icon-box">
-                <i class="fa fa-envelope-open"></i>
-                <a href="contact.html">
-                    <h2>Contact</h2>
-                </a>
-            </li>
-        </ul>
-        <!-- Fixed Navigation Ends -->
-        <!-- Mobile Menu Starts -->
-        <nav role="navigation" class="d-block d-lg-none">
-            <div id="menuToggle">
-                <input type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul class="list-unstyled" id="menu">
-                    <li class="active"><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
-                    <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
-                    <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
-                    <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Mobile Menu Ends -->
-    </header>
-    <!-- Header Ends -->
-    <!-- Main Content Starts -->
-    <section class="container-fluid main-container container-home p-0 revealator-slideup revealator-once revealator-delay1 no-transform revealator-within">
-        <div class="color-block d-none d-lg-block"></div>
-        <div class="row home-details-container align-items-center">
-            <div class="col-lg-4 bg position-fixed d-none d-lg-block"></div>
-            <div class="col-12 col-lg-8 offset-lg-4 home-details text-left text-sm-center text-lg-left">
-                <div>
-                    <img src="assets/img/profile-picture.png" class="img-fluid main-img-mobile d-none d-sm-block d-lg-none" alt="my picture">
-                    <h1 class="text-uppercase poppins-font">I'm Farhan.<span>Full Stack Developer</span></h1>
-                    <p class="open-sans-font">I have many years of experience as a Full-Stack Developer and have worked in remote teams with many different clients all around the world. I am adept at developing websites and web apps using HTML, CSS, PHP, JavaScript/jQuery, React, Angular, Vue.js, Node.js & Laravel. Further, mobile application development using Flutter, Kotlin, Swift, and React Native.</p>
-                    <a class="button" href="about.html">
-                        <span class="button-text">more about me</span>
-                        <span class="button-icon fa fa-arrow-right"></span>
-                    </a>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Magnific-popup stylesheet -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- Owl Carousel stylesheet -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <!-- Owl theme stylesheet -->
+    <link rel="stylesheet" href="asets/css/owl.theme.default.min.css">
+    <!-- Animated headline stylesheet -->
+    <link rel="stylesheet" href="assets/css/jquery.animatedheadline.css">
+    <!-- MeanMenu stylesheet -->
+    <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+    <!-- Line progressbar stylesheet -->
+    <link rel="stylesheet" href="assets/css/jquery.lineProgressbar.css">
+    <!-- font awesome stylesheet -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- AOS stylesheet -->
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <!-- Responsive stylesheet -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body class="home-two-body row m-0 overflow-x-hidden">
+    <aside class="sidebar-navigation-container col-12 col-xl-2 col-2xl-1">
+        <header class="mt-55 sidebar-header d-none d-xl-block">
+            <div class="position-relative">
+                <div class="sidebar-navigation">
+                    <nav class="sidebar-nav-menu">
+                        <ul id="onepage-nav" class="header-menu d-flex flex-column justify-content-center">
+                            <li class="sidebar-menu-item">
+                                <a class="menu-link scroll" href="#home">Home</a>
+                            </li>
+                            <li class="sidebar-menu-item">
+                                <a class="menu-link scroll" href="#about">About</a>
+                            </li>
+                            <li class="sidebar-menu-item">
+                                <a class="menu-link scroll" href="#service">Services</a>
+                            </li>
+                            <li class="sidebar-menu-item">
+                                <a class="menu-link scroll" href="#resume">Resume</a>
+                            </li>
+                            <li>
+                                <a class="menu-link scroll" href="#recent">Recent Work</a>
+                            </li>
+                            <!-- <li>
+                                <a class="menu-link scroll" href="#testimonial">Testimonial</a>
+                            </li> -->
+                        </ul>
+                    </nav>
+                </div>
+                <div class="sidebar-social-media">
+                    <div class="social-container d-flex align-items-center">
+                        <a class="mr-20" href="https://facebook.com">
+                            <svg class="svg-inline--fa fa-facebook-f secondary-black h5" aria-hidden="true"
+                                focusable="false" data-prefix="fab" data-icon="facebook-f" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                </path>
+                            </svg><!-- <i class="fa-brands fa-facebook-f secondary-black h5"></i> Font Awesome fontawesome.com -->
+                        </a>
+                        <a class="mr-20" href="https://linkedin.com">
+                            <svg class="svg-inline--fa fa-linkedin-in secondary-black h5" aria-hidden="true"
+                                focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                                </path>
+                            </svg><!-- <i class="fa-brands fa-linkedin-in secondary-black h5"></i> Font Awesome fontawesome.com -->
+                        </a>
+                        <a class="mr-20 mt-1" href="https://twitter.com">
+                            <svg class="svg-inline--fa fa-twitter secondary-black h5" aria-hidden="true"
+                                focusable="false" data-prefix="fab" data-icon="twitter" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                </path>
+                            </svg><!-- <i class="fa-brands fa-twitter secondary-black h5"></i> Font Awesome fontawesome.com -->
+                        </a>
+                    </div>
                 </div>
             </div>
+        </header>
+    </aside>
+
+    <main class="home-two col-12 col-xl-10 col-2xl-11 p-0">
+
+        <div class="mobile-menu d-block d-xl-none">
+            <nav style="display: block;">
+                <ul class="menu">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a>
+                    </li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <!-- <li><a href="services.html">Blog</a>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li> -->
+                </ul>
+            </nav>
         </div>
-    </section>
-    <!-- Main Content Ends -->
-    
-    <!-- Template JS Files -->
-    <script src="assets/js/jquery.min.js"></script>
+
+        <section id="home" class="home-two-banner position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div>
+                            <div class="home-two-banner-wrapper row align-items-center">
+                                <div
+                                    class="col-12 col-lg-5 col-xxl-6 text-center position-relative home-banner-img-col">
+                                    <img class="img-fluid position-relative z-index-10 home-banner-img"
+                                        src="assets/img/profile.png" alt="banner-image">
+                                    <img src="https://credesign.vercel.app/onePage/onePageTwo/img/homeTwoBannerCircle.png"
+                                        alt="bannercircle image"
+                                        class="home-two-banner-circle position-absolute content-fade-in-out">
+                                </div>
+                                <div class="col-12 col-lg-7 col-xxl-6 home-banner-text-col position-relative">
+                                    <div class="sub-heading">
+                                        <p class="text-uppercase secondary-black">I'm glad you're here.</p>
+                                    </div>
+                                    <h1 class="black-color h1 h1-home-2">Hello i’m <span
+                                            class="orange-color">Farhan</span>
+                                        A Full Stack Developer</h1>
+                                    <div class="mt-85 ml-95 home-two-banner-texts">
+                                        <p class="h5 line-height-7 mt-20 fw-400 secondary-black">
+                                            I have 5 years of experience as a Full-Stack Developer and have worked in
+                                            remote teams with many different clients all around the world. I am adept at
+                                            developing websites and web apps using HTML, CSS, PHP, JavaScript/jQuery,
+                                            React, Angular, Vue.js, Node.js & Laravel. Further, mobile application
+                                            development using Flutter, Kotlin, Swift, and React Native.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="about-wrapper">
+                            <div class="row align-items-center about-two-container">
+                                <div class="about-text-col col-12">
+                                    <div class="about-text-top">
+                                        <div class="section-heading">
+                                            <div class="sub-heading d-flex align-items-center">
+                                                <img src="assets/img/orangeDot.png" alt="orange-dot">
+                                                <p class="mb-0">About Me</p>
+                                            </div>
+                                            <h2 class="black-color line-height-3 h2 font-weight-bold">
+                                                MY SKILLS
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12">
+                                            <div class="row-mobile-margin mt-50">
+                                                <div class="skill-progressbar-container">
+                                                    <p class="p secondary-black fw-400 line-height-7 mb-10 mt-10">
+                                                        ReactJS</p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar w-100" role="progressbar"
+                                                            style="background-color: rgb(255, 107, 0); height: 10px; border-radius: 15px; width: 100%;"
+                                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-progressbar-container">
+                                                    <p class="p secondary-black fw-400 line-height-7 mb-10 mt-10">Vue.JS
+                                                    </p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar w-100" role="progressbar"
+                                                            style="background-color: rgb(255, 107, 0); height: 10px; border-radius: 15px; width: 100%;"
+                                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-progressbar-container">
+                                                    <p class="p secondary-black fw-400 line-height-7 mb-10 mt-10">NodeJS
+                                                    </p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar w-100" role="progressbar"
+                                                            style="background-color: rgb(255, 107, 0); height: 10px; border-radius: 15px; width: 100%;"
+                                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-progressbar-container">
+                                                    <p class="p secondary-black fw-400 line-height-7 mb-10 mt-10">
+                                                        Laravel
+                                                    </p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar w-100" role="progressbar"
+                                                            style="background-color: rgb(255, 107, 0); height: 10px; border-radius: 15px; width: 100%;"
+                                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-progressbar-container">
+                                                    <p class="p secondary-black fw-400 line-height-7 mb-10 mt-10">
+                                                        Bootstrap
+                                                    </p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar w-100" role="progressbar"
+                                                            style="background-color: rgb(255, 107, 0); height: 10px; border-radius: 15px; width: 100%;"
+                                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-progressbar-container">
+                                                    <p class="p secondary-black fw-400 line-height-7 mb-10 mt-10">
+                                                        Material UI
+                                                    </p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar w-100" role="progressbar"
+                                                            style="background-color: rgb(255, 107, 0); height: 10px; border-radius: 15px; width: 100%;"
+                                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-progressbar-container">
+                                                    <p class="p secondary-black fw-400 line-height-7 mb-10 mt-10">JQuery
+                                                    </p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar w-100" role="progressbar"
+                                                            style="background-color: rgb(255, 107, 0); height: 10px; border-radius: 15px; width: 100%;"
+                                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-12">
+                                            <div class="row-mobile-margin mt-50">
+                                                <div class="skill-progressbar-container">
+                                                    <p class="p secondary-black fw-400 line-height-7 mb-10">Angular</p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar w-100" role="progressbar"
+                                                            style="background-color: rgb(255, 107, 0); height: 10px; border-radius: 15px; width: 100%;"
+                                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-progressbar-container">
+                                                    <p class="p secondary-black fw-400 line-height-7 mb-10 mt-10">React
+                                                        Native
+                                                    </p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar w-100" role="progressbar"
+                                                            style="background-color: rgb(255, 107, 0); height: 10px; border-radius: 15px; width: 100%;"
+                                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-progressbar-container">
+                                                    <p class="p secondary-black fw-400 line-height-7 mb-10 mt-10">PHP
+                                                    </p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar w-100" role="progressbar"
+                                                            style="background-color: rgb(255, 107, 0); height: 10px; border-radius: 15px; width: 100%;"
+                                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-progressbar-container">
+                                                    <p class="p secondary-black fw-400 line-height-7 mb-10 mt-10">
+                                                        JavaScript
+                                                    </p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar w-100" role="progressbar"
+                                                            style="background-color: rgb(255, 107, 0); height: 10px; border-radius: 15px; width: 100%;"
+                                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-progressbar-container">
+                                                    <p class="p secondary-black fw-400 line-height-7 mb-10 mt-10">
+                                                        Tailwind CSS
+                                                    </p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar w-100" role="progressbar"
+                                                            style="background-color: rgb(255, 107, 0); height: 10px; border-radius: 15px; width: 100%;"
+                                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-progressbar-container">
+                                                    <p class="p secondary-black fw-400 line-height-7 mb-10 mt-10">HTML
+                                                    </p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar w-100" role="progressbar"
+                                                            style="background-color: rgb(255, 107, 0); height: 10px; border-radius: 15px; width: 100%;"
+                                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-progressbar-container">
+                                                    <p class="p secondary-black fw-400 line-height-7 mb-10 mt-10">CSS
+                                                    </p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar w-100" role="progressbar"
+                                                            style="background-color: rgb(255, 107, 0); height: 10px; border-radius: 15px; width: 100%;"
+                                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="service" class="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="services-wrapper">
+                            <div class="section-heading-middle">
+                                <div class="sub-heading d-flex align-items-center mx-auto">
+                                    <img src="assets/img/orangeDot.png" alt="orange-dot">
+                                    <p>Services</p>
+                                </div>
+                                <h2 class="black-color line-height-3 h2 text-uppercase text-center">
+                                    My Services
+                                </h2>
+                            </div>
+                            <div class="service-grid-container mt-50 row-mobile-margin">
+                                <!-- <div class="service-grid-item text-start">
+                                    <img class="service-item-img" src="assets/img/serviceNine.png"
+                                        alt="service-img-two">
+                                    <h3 class="h3 fw-500 service-item-heading black-color">Web Design</h3>
+                                    <p class="p service-item-paragraph secondary-black fw-400 line-height-7">
+                                        Passionate web developer creating immersive online experiences. Expertise in
+                                        HTML, CSS, JavaScript, and cutting-edge frameworks. Transforming concepts into
+                                        visually stunning and user-friendly websites for a standout online presence.
+                                        Let's bring your digital vision to life!
+                                    </p>
+                                </div> -->
+                                <div class="service-grid-item text-start">
+                                    <img class="service-item-img" src="assets/img/serviceTen.png"
+                                        alt="service-img-four">
+                                    <h3 class="h3 fw-500 service-item-heading black-color">Web Development</h3>
+                                    <p class="p service-item-paragraph secondary-black fw-400 line-height-7">
+                                        Passionate web developer creating immersive online experiences. Expertise in
+                                        HTML, CSS, JavaScript, and cutting-edge frameworks. Transforming concepts into
+                                        visually stunning and user-friendly websites for a standout online presence.
+                                        Let's bring your digital vision to life!
+                                    </p>
+                                </div>
+                                <div class="service-grid-item text-start">
+                                    <img class="service-item-img" src="assets/img/serviceEleven.png"
+                                        alt="service-img-seven">
+                                    <h3 class="h3 fw-500 service-item-heading black-color">Mobile Development</h3>
+                                    <p class="p service-item-paragraph secondary-black fw-400 line-height-7">
+                                        Versatile mobile developer proficient in React Native and Flutter. Crafting
+                                        seamless, cross-platform apps with a focus on intuitive design and optimal user
+                                        experience. Elevate your mobile presence with innovative solutions.
+                                    </p>
+                                </div>
+                                <div class="service-grid-item text-start">
+                                    <img class="service-item-img" src="assets/img/serviceTwelve.png"
+                                        alt="service-img-eight">
+                                    <h3 class="h3 fw-500 service-item-heading black-color">CMS Development</h3>
+                                    <p class="p service-item-paragraph secondary-black fw-400 line-height-7">
+                                        Passionate CMS developer specializing in Wordpress, Shopify, Webflow, and Go
+                                        High Level. Transforming concepts into visually stunning, user-friendly websites
+                                        for a standout online presence. Let's bring your digital vision to life!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="resume-two">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="resume-wrapper">
+                            <div class="section-heading-middle">
+                                <div class="sub-heading d-flex align-items-center mx-auto">
+                                    <img src="assets/img/orangeDot.png" alt="orange-dot">
+                                    <p>Resume</p>
+                                </div>
+                                <h2 class="black-color line-height-3 h2 text-uppercase text-center">
+                                    Education &amp; Experience
+                                </h2>
+                            </div>
+                            <div class="row mt-50 row-mobile-margin">
+                                <div class="col-12 col-lg-6 resume-content-left pl-10 pr-10">
+                                    <div
+                                        class="resume-style-two-item d-flex justify-content-between align-items-center">
+                                        <div class="resume-style-two-heading">
+                                            <h5 class="h5 fw-600 line-height-6 black-color mb-1">Bachelor's of
+                                                Software Engineering
+                                            </h5>
+                                            <p class="p line-height-7 secondary-black">
+                                                University of South Asia
+                                            </p>
+                                        </div>
+                                        <p class="fw-400 line-height-7 orange-color">2017 - 2021</p>
+                                    </div>
+                                    <hr class="divider-style-one">
+                                    <div
+                                        class="resume-style-two-item d-flex justify-content-between align-items-center">
+                                        <div class="resume-style-two-heading">
+                                            <h5 class="h5 fw-600 line-height-6 black-color mb-1">Full Stack Web
+                                                Development
+                                                Certificate</h5>
+                                            <p class="p line-height-7 secondary-black">
+                                                Coursera
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr class="divider-style-one">
+                                </div>
+                                <div class="col-12 col-lg-6 resume-content-right pl-10 pr-10">
+                                    <div
+                                        class="resume-style-two-item d-flex justify-content-between align-items-center">
+                                        <div class="resume-style-two-heading">
+                                            <h5 class="h5 fw-600 line-height-6 black-color mb-1">Senior Full Stack
+                                                Developer
+                                            </h5>
+                                            <p class="p line-height-7 secondary-black">
+                                                TransData International
+                                            </p>
+                                        </div>
+                                        <p class="fw-400 line-height-7 orange-color"> 2020 - Running</p>
+                                    </div>
+                                    <hr class="divider-style-one">
+                                    <div
+                                        class="resume-style-two-item d-flex justify-content-between align-items-center">
+                                        <div class="resume-style-two-heading">
+                                            <h5 class="h5 fw-600 line-height-6 black-color mb-1">Full Stack Developer
+                                            </h5>
+                                            <p class="p line-height-7 secondary-black">
+                                                Haayat.pk
+                                            </p>
+                                        </div>
+                                        <p class="fw-400 line-height-7 orange-color">2019 - 2020</p>
+                                    </div>
+                                    <hr class="divider-style-one">
+                                    <div
+                                        class="resume-style-two-item d-flex justify-content-between align-items-center">
+                                        <div class="resume-style-two-heading">
+                                            <h5 class="h5 fw-600 line-height-6 black-color mb-1">Frontend Developer</h5>
+                                            <p class="p line-height-7 secondary-black">
+                                                Seers
+                                            </p>
+                                        </div>
+                                        <p class="fw-400 line-height-7 orange-color">2018 - 2019</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recent" class="portfolio-two">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="portfolio-wrapper">
+                            <div class="section-heading-middle">
+                                <div class="sub-heading d-flex align-items-center mx-auto">
+                                    <img src="assets/img/orangeDot.png" alt="orange-dot">
+                                    <p>Portfolio</p>
+                                </div>
+                                <h2 class="black-color line-height-3 h2 text-uppercase text-center">
+                                    Some Recent Work
+                                </h2>
+                            </div>
+                            <div class="mt-50 row-mobile-margin">
+                                <div class="controls d-flex justify-content-center flex-wrap gap-1 gap-lg-4 mb-45">
+                                    <button type="button"
+                                        class="control filter btn .outline-0 border-0 secondary-black mixitup-control-active"
+                                        data-filter=".all">All</button>
+                                    <button type="button" class="control filter btn .outline-0 border-0 secondary-black"
+                                        data-filter=".web">Web Apps</button>
+                                    <button type="button" class="control filter btn .outline-0 border-0 secondary-black"
+                                        data-filter=".mobile-portfolio">Mobile Apps</button>
+                                    <button type="button" class="control filter btn .outline-0 border-0 secondary-black"
+                                        data-filter=".wordpress">CMS</button>
+                                </div>
+                                <div class="portfolio-massonary-container" id="MixItUp121AC2" style="">
+                                    <div class="portfolio-massonary-two-items mix web all position-relative">
+                                        <a href="https://poostocks.com/" target="_blank">
+                                            <div class="modal fade" id="recentModalOne" tabindex="-1"
+                                                aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered justify-content-center">
+                                                    <div>
+                                                        <button type="button" class="btn-close mb-10 btn"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        <img class="img-fluid" src="assets/img/poostock.png"
+                                                            alt="portfolio img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="img-overlay-full">
+                                                <img class="img-fluid" src="assets/img/poostock.png"
+                                                    alt="portfolio img">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-massonary-two-items mix web all position-relative">
+                                        <a href="https://socialcurrant.co/" target="_blank">
+                                            <div class="modal fade" id="recentModalOne" tabindex="-1"
+                                                aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered justify-content-center">
+                                                    <div>
+                                                        <button type="button" class="btn-close mb-10 btn"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        <img class="img-fluid" src="assets/img/social.png"
+                                                            alt="portfolio img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="img-overlay-full">
+                                                <img class="img-fluid" src="assets/img/social.png" alt="portfolio img">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-massonary-two-items mix web all position-relative">
+                                        <a href="https://streamdip.com/" target="_blank">
+                                            <div class="modal fade" id="recentModalTwo" tabindex="-1"
+                                                aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered justify-content-center">
+                                                    <div>
+                                                        <button type="button" class="btn-close mb-10 btn"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        <img class="img-fluid" src="assets/img/streamdip.png"
+                                                            alt="portfolio img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="img-overlay-full">
+                                                <img class="img-fluid" src="assets/img/streamdip.png"
+                                                    alt="portfolio img">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-massonary-two-items mix web all position-relative">
+                                        <a href="https://earnfluencers.com/" target="_blank">
+                                            <div class="modal fade" id="recentModalOne" tabindex="-1"
+                                                aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered justify-content-center">
+                                                    <div>
+                                                        <button type="button" class="btn-close mb-10 btn"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        <img class="img-fluid" src="assets/img/Earn.png"
+                                                            alt="portfolio img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="img-overlay-full">
+                                                <img class="img-fluid" src="assets/img/Earn.png" alt="portfolio img">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-massonary-two-items mix web all position-relative">
+                                        <a href="https://dentinect.co/" target="_blank">
+                                            <div class="modal fade" id="recentModalOne" tabindex="-1"
+                                                aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered justify-content-center">
+                                                    <div>
+                                                        <button type="button" class="btn-close mb-10 btn"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        <img class="img-fluid" src="assets/img/dentinect.png"
+                                                            alt="portfolio img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="img-overlay-full">
+                                                <img class="img-fluid" src="assets/img/dentinect.png"
+                                                    alt="portfolio img">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-massonary-two-items mix web all position-relative">
+                                        <a href="https://www.galleria40.com/" target="_blank">
+                                            <div class="modal fade" id="recentModalFour" tabindex="-1"
+                                                aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered justify-content-center">
+                                                    <div>
+                                                        <button type="button" class="btn-close mb-10 btn"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        <img class="img-fluid" src="assets/img/galleria.png"
+                                                            alt="portfolio img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="img-overlay-full">
+                                                <img class="img-fluid" src="assets/img/galleria.png"
+                                                    alt="portfolio img">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-massonary-two-items mix web all position-relative">
+                                        <a href="https://khatamshareef.com/" target="_blank">
+                                            <div class="modal fade" id="recentModalFour" tabindex="-1"
+                                                aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered justify-content-center">
+                                                    <div>
+                                                        <button type="button" class="btn-close mb-10 btn"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        <img class="img-fluid" src="assets/img/khatam.png"
+                                                            alt="portfolio img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="img-overlay-full">
+                                                <img class="img-fluid" src="assets/img/khatam.png" alt="portfolio img">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-massonary-two-items mix wordpress all position-relative">
+                                        <a href="https://qhwmedspa.com/" target="_blank">
+                                            <div class="modal fade" id="recentModalFour" tabindex="-1"
+                                                aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered justify-content-center">
+                                                    <div>
+                                                        <button type="button" class="btn-close mb-10 btn"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        <img class="img-fluid" src="assets/img/qhwmedspa.png"
+                                                            alt="portfolio img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="img-overlay-full">
+                                                <img class="img-fluid" src="assets/img/qhwmedspa.png"
+                                                    alt="portfolio img">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-massonary-two-items mix wordpress all position-relative">
+                                        <a href="https://cryptochiefs.io/" target="_blank">
+                                            <div class="modal fade" id="recentModalFour" tabindex="-1"
+                                                aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered justify-content-center">
+                                                    <div>
+                                                        <button type="button" class="btn-close mb-10 btn"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        <img class="img-fluid" src="assets/img/Crypto.png"
+                                                            alt="portfolio img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="img-overlay-full">
+                                                <img class="img-fluid" src="assets/img/Crypto.png" alt="portfolio img">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-massonary-two-items mix wordpress all position-relative">
+                                        <a href="https://dimarketingco.com/" target="_blank">
+                                            <div class="modal fade" id="recentModalFour" tabindex="-1"
+                                                aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered justify-content-center">
+                                                    <div>
+                                                        <button type="button" class="btn-close mb-10 btn"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        <img class="img-fluid" src="assets/img/Digital.png"
+                                                            alt="portfolio img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="img-overlay-full">
+                                                <img class="img-fluid" src="assets/img/Digital.png" alt="portfolio img">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-massonary-two-items mix wordpress all position-relative">
+                                        <a href="https://www.americanslocksmith.net/" target="_blank">
+                                            <div class="modal fade" id="recentModalFour" tabindex="-1"
+                                                aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered justify-content-center">
+                                                    <div>
+                                                        <button type="button" class="btn-close mb-10 btn"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        <img class="img-fluid" src="assets/img/LockSmith.png"
+                                                            alt="portfolio img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="img-overlay-full">
+                                                <img class="img-fluid" src="assets/img/LockSmith.png"
+                                                    alt="portfolio img">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-massonary-two-items mix wordpress all position-relative">
+                                        <a href="https://petbizexperts.com/" target="_blank">
+                                            <div class="modal fade" id="recentModalFour" tabindex="-1"
+                                                aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered justify-content-center">
+                                                    <div>
+                                                        <button type="button" class="btn-close mb-10 btn"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        <img class="img-fluid" src="assets/img/PetBiz.png"
+                                                            alt="portfolio img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="img-overlay-full">
+                                                <img class="img-fluid" src="assets/img/PetBiz.png" alt="portfolio img">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-massonary-two-items mix mobile-portfolio all position-relative"
+                                        style="display: flex;justify-content: space-between;">
+                                        <div class="modal fade" id="recentModalFive" tabindex="-1" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered justify-content-center">
+                                                <div>
+                                                    <button type="button" class="btn-close mb-10 btn"
+                                                        data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    <img class="img-fluid" src="assets/img/galleria-mobile.png"
+                                                        alt="portfolio img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="img-overlay-full" style="width: fit-content;">
+                                            <img class="img-fluid" src="assets/img/galleria-mobile.png"
+                                                alt="portfolio img">
+                                        </div>
+                                        <div class="img-overlay-full" style="width: fit-content;">
+                                            <img class="img-fluid" src="assets/img/galleria-mobile.png"
+                                                alt="portfolio img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 
+        <section id="testimonial" class="testimonial">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="testimonial-wrapper">
+                            <div class="section-heading-middle">
+                                <div class="sub-heading d-flex align-items-center mx-auto">
+                                    <img src="assets/img/orangeDot.png" alt="orange-dot">
+                                    <p>Testimonial</p>
+                                </div>
+                                <h2 class="black-color line-height-3 h2 text-uppercase text-center">
+                                    Client Feedback
+                                </h2>
+                            </div>
+                            <div class="testimonial-list-container row-mobile-margin mt-50">
+                                <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                                    <div class="owl-stage-outer">
+                                        <div class="owl-stage"
+                                            style="transition: all 0.25s ease 0s; width: 4400px; transform: translate3d(-2200px, 0px, 0px);">
+                                            <div class="owl-item cloned" style="width: 416px; margin-right: 24px;">
+                                                <div class="item">
+                                                    <div class="testimonial-card">
+                                                        <div class="bio d-flex align-items-center">
+                                                            <img class="bio-img" src="img/testimonialTwo.png"
+                                                                alt="testimonial-image">
+                                                            <div>
+                                                                <h3 class="h3 fw-500 line-height-3 black-color">
+                                                                    Christopher Williams</h3>
+                                                                <p class="p fw-400 line-height-7 secondary-black">CEO,
+                                                                    StreamDip
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="p line-height-7 fw-400 secondary-black mt-20">
+                                                            Great communication and problem-solving skills. Fast
+                                                            turnarounds, knowledgeable.
+                                                            Good UX ideas and overall a fantastic proactive approach to
+                                                            the project. Would recommend.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item cloned" style="width: 416px; margin-right: 24px;">
+                                                <div class="item">
+                                                    <div class="testimonial-card">
+                                                        <div class="bio d-flex align-items-center">
+                                                            <img class="bio-img" src="img/testimonialThree.png"
+                                                                alt="testimonial-image">
+                                                            <div>
+                                                                <h3 class="h3 fw-500 line-height-3 black-color">Mohamed
+                                                                    Shamoon</h3>
+                                                                <p class="p fw-400 line-height-7 secondary-black">
+                                                                    Digital Transformation Section Head, Raya Smart Buildings
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="p line-height-7 fw-400 secondary-black mt-20">
+                                                            Muhammad provided excellent work. He will be the first person we contact for all future projects.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item cloned" style="width: 416px; margin-right: 24px;">
+                                                <div class="item">
+                                                    <div class="testimonial-card">
+                                                        <div class="bio d-flex align-items-center">
+                                                            <img class="bio-img" src="img/testimonialThree.png"
+                                                                alt="testimonial-image">
+                                                            <div>
+                                                                <h3 class="h3 fw-500 line-height-3 black-color">Robert
+                                                                    E. Wolf </h3>
+                                                                <p class="p fw-400 line-height-7 secondary-black">
+                                                                    Director, Techso
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="p line-height-7 fw-400 secondary-black mt-20">
+                                                            “Contrary to popular belief, Lorem Ipsum is not simply
+                                                            random text. It
+                                                            has roots
+                                                            in a piece of classical Latin literature fr45 BC, mak it
+                                                            over 2000 years
+                                                            old.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item" style="width: 416px; margin-right: 24px;">
+                                                <div class="item">
+                                                    <div class="testimonial-card">
+                                                        <div class="bio d-flex align-items-center">
+                                                            <img class="bio-img" src="img/testimonialOne.png"
+                                                                alt="testimonial-image">
+                                                            <div>
+                                                                <h3 class="h3 fw-500 line-height-3 black-color">John K.
+                                                                    Meraz</h3>
+                                                                <p class="p fw-400 line-height-7 secondary-black">CTO,
+                                                                    Xyz Group</p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="p line-height-7 fw-400 secondary-black mt-20">
+                                                            “Contrary to popular belief, Lorem Ipsum is not simply
+                                                            random text. It
+                                                            has roots
+                                                            in a piece of classical Latin literature fr45 BC, mak it
+                                                            over 2000 years
+                                                            old.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item" style="width: 416px; margin-right: 24px;">
+                                                <div class="item">
+                                                    <div class="testimonial-card">
+                                                        <div class="bio d-flex align-items-center">
+                                                            <img class="bio-img" src="img/testimonialTwo.png"
+                                                                alt="testimonial-image">
+                                                            <div>
+                                                                <h3 class="h3 fw-500 line-height-3 black-color">Johan
+                                                                    Smith</h3>
+                                                                <p class="p fw-400 line-height-7 secondary-black">CEO,
+                                                                    Abc Agency
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="p line-height-7 fw-400 secondary-black mt-20">
+                                                            “Contrary to popular belief, Lorem Ipsum is not simply
+                                                            random text. It
+                                                            has roots
+                                                            in a piece of classical Latin literature fr45 BC, mak it
+                                                            over 2000 years
+                                                            old.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item active" style="width: 416px; margin-right: 24px;">
+                                                <div class="item">
+                                                    <div class="testimonial-card">
+                                                        <div class="bio d-flex align-items-center">
+                                                            <img class="bio-img" src="img/testimonialThree.png"
+                                                                alt="testimonial-image">
+                                                            <div>
+                                                                <h3 class="h3 fw-500 line-height-3 black-color">Robert
+                                                                    E. Wolf </h3>
+                                                                <p class="p fw-400 line-height-7 secondary-black">
+                                                                    Director, Techso
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="p line-height-7 fw-400 secondary-black mt-20">
+                                                            “Contrary to popular belief, Lorem Ipsum is not simply
+                                                            random text. It
+                                                            has roots
+                                                            in a piece of classical Latin literature fr45 BC, mak it
+                                                            over 2000 years
+                                                            old.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item active center"
+                                                style="width: 416px; margin-right: 24px;">
+                                                <div class="item">
+                                                    <div class="testimonial-card">
+                                                        <div class="bio d-flex align-items-center">
+                                                            <img class="bio-img" src="img/testimonialThree.png"
+                                                                alt="testimonial-image">
+                                                            <div>
+                                                                <h3 class="h3 fw-500 line-height-3 black-color">Robert
+                                                                    E. Wolf </h3>
+                                                                <p class="p fw-400 line-height-7 secondary-black">
+                                                                    Director, Techso
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="p line-height-7 fw-400 secondary-black mt-20">
+                                                            “Contrary to popular belief, Lorem Ipsum is not simply
+                                                            random text. It
+                                                            has roots
+                                                            in a piece of classical Latin literature fr45 BC, mak it
+                                                            over 2000 years
+                                                            old.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item cloned active"
+                                                style="width: 416px; margin-right: 24px;">
+                                                <div class="item">
+                                                    <div class="testimonial-card">
+                                                        <div class="bio d-flex align-items-center">
+                                                            <img class="bio-img" src="img/testimonialOne.png"
+                                                                alt="testimonial-image">
+                                                            <div>
+                                                                <h3 class="h3 fw-500 line-height-3 black-color">John K.
+                                                                    Meraz</h3>
+                                                                <p class="p fw-400 line-height-7 secondary-black">CTO,
+                                                                    Xyz Group</p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="p line-height-7 fw-400 secondary-black mt-20">
+                                                            “Contrary to popular belief, Lorem Ipsum is not simply
+                                                            random text. It
+                                                            has roots
+                                                            in a piece of classical Latin literature fr45 BC, mak it
+                                                            over 2000 years
+                                                            old.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item cloned" style="width: 416px; margin-right: 24px;">
+                                                <div class="item">
+                                                    <div class="testimonial-card">
+                                                        <div class="bio d-flex align-items-center">
+                                                            <img class="bio-img" src="img/testimonialTwo.png"
+                                                                alt="testimonial-image">
+                                                            <div>
+                                                                <h3 class="h3 fw-500 line-height-3 black-color">Johan
+                                                                    Smith</h3>
+                                                                <p class="p fw-400 line-height-7 secondary-black">CEO,
+                                                                    Abc Agency
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="p line-height-7 fw-400 secondary-black mt-20">
+                                                            “Contrary to popular belief, Lorem Ipsum is not simply
+                                                            random text. It
+                                                            has roots
+                                                            in a piece of classical Latin literature fr45 BC, mak it
+                                                            over 2000 years
+                                                            old.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item cloned" style="width: 416px; margin-right: 24px;">
+                                                <div class="item">
+                                                    <div class="testimonial-card">
+                                                        <div class="bio d-flex align-items-center">
+                                                            <img class="bio-img" src="img/testimonialThree.png"
+                                                                alt="testimonial-image">
+                                                            <div>
+                                                                <h3 class="h3 fw-500 line-height-3 black-color">Robert
+                                                                    E. Wolf </h3>
+                                                                <p class="p fw-400 line-height-7 secondary-black">
+                                                                    Director, Techso
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="p line-height-7 fw-400 secondary-black mt-20">
+                                                            “Contrary to popular belief, Lorem Ipsum is not simply
+                                                            random text. It
+                                                            has roots
+                                                            in a piece of classical Latin literature fr45 BC, mak it
+                                                            over 2000 years
+                                                            old.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section> -->
+    </main>
+
+    <div class="loader-mask" style="display: none;">
+        <div class="loader" style="display: none;">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- Jquery script -->
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <!-- Bootstrap Script -->
     <script src="assets/js/bootstrap.min.js"></script>
-    </body>
+    <!-- Magnific-popup script -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Owl carousel script -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- MeanMenu script -->
+    <script src="assets/js/jquery.meanmenu.js"></script>
+    <!-- Line progressbar script -->
+    <script src="assets/js/jquery.lineProgressbar.js"></script>
+    <!-- Multi animated counter -->
+    <script src="assets/js/multi-animated-counter.js"></script>
+    <!-- One page nav script -->
+    <script src="assets/js/onepageNav.js"></script>
+    <!-- font awesome script -->
+    <script src="assets/js/all.min.js"></script>
+    <!-- AOS script -->
+    <script src="assets/js/aos.js"></script>
+    <!-- Animated headline script -->
+    <script src="assets/js/jquery.animatedheadline.min.js"></script>
+    <!-- mixitup -->
+    <script src="assets/js/mixitup.min.js"></script>
+    <!-- jQuery Counterup -->
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- Main JS script -->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
